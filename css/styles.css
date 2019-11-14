@@ -155,67 +155,96 @@ html body {
 html body div.container {
   border: 1px solid black;
   background: #f7e6ca;
+  /*  section.call-to-action {
+          border: 1px solid black;
+          background: @green;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+          margin: 20% auto;
+          width: 30%;
+          height: 20em;
+
+            background-image: url("https://picsum.photos/700/");
+          background-image: url("../img/snow.jpg");
+
+          h2 {
+            font-size: 2em;
+            margin: 5% 5%;
+          }
+
+          div.button {
+            background: @blue;
+            color: @orange;
+            width: 30%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+
+            p {
+              text-align: center;
+              margin: 0 auto;
+              font-weight: bold;
+            }
+          }
+
+          div.button:hover {
+            background: @orange;
+            color: @blue;
+          }
+        } // end call to action */
+  /*   section.features {
+        border: 1px solid black;
+        margin-left: 10%;
+        height: 50%;
+      } */
 }
-html body div.container header nav {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  background: #5193b3;
-  padding-bottom: 3%;
+html body div.container header {
+  /* Style the navigation menu */
 }
-html body div.container header nav div.left {
-  display: flex;
-  justify-content: space-between;
+html body div.container header div.topnav {
+  overflow: hidden;
+  background-color: #5193b3;
+  position: relative;
+  /* Style Logo */
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  /* Style navigation menu links */
+  /* Style the hamburger menu */
+  /* Add a grey background color on mouse-over */
 }
-html body div.container header nav div.left h2 {
-  align-self: left ;
+html body div.container header div.topnav img.logo {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
 }
-html body div.container header nav div.right {
-  display: flex;
-  align-items: flex-end;
-  justify-content: right;
-  height: 5em;
+html body div.container header div.topnav p {
+  display: inline-block;
+  position: absolute;
+  font-size: 2rem;
+  top: 25%;
 }
-html body div.container header nav div.right a {
+html body div.container header div.topnav #myLinks {
+  display: none;
+}
+html body div.container header div.topnav a {
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
-html body div.container header section.call-to-action {
-  border: 1px solid black;
-  background: #64c4c3;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  margin: 20% auto;
-  width: 30%;
-  height: 20em;
-  /*  background-image: url("https://picsum.photos/700/");*/
-  background-image: url("../img/snow.jpg");
+html body div.container header div.topnav a.icon {
+  background-color: #5193b3;
+  color: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  bottom: 0;
 }
-html body div.container header section.call-to-action h2 {
-  font-size: 2em;
-  margin: 5%  5%;
-}
-html body div.container header section.call-to-action div.button {
-  background: #5193b3;
-  color: #f8d49a;
-  width: 30%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-html body div.container header section.call-to-action div.button p {
-  text-align: center;
-  margin: 0 auto;
-  font-weight: bold;
-}
-html body div.container header section.call-to-action div.button:hover {
-  background: #f8d49a;
-  color: #5193b3;
-}
-html body div.container section.features {
-  border: 1px solid black;
-  margin-left: 10%;
-  height: 50%;
+html body div.container header div.topnav i.fa.fa-bars {
+  font-size: 30px;
 }

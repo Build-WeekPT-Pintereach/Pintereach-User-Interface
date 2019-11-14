@@ -155,8 +155,6 @@ a {
 }
 
 html {
-  
-
   body {
     font-size: 62.5%;
     div.container {
@@ -164,38 +162,62 @@ html {
       background: @yellow;
 
       header {
-        nav {
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          background: @blue;
-          padding-bottom: 3%;
-          div.left{
-
-            display: flex;
-            justify-content: space-between;
-            h2{
-              align-self: left ;            }
-          }
-          div.right{
+        /* Style the navigation menu */
+        div.topnav {
+          overflow: hidden;
+          background-color: @blue;
+          position: relative;
           
-           
-            display: flex;
-            align-items: flex-end;
-            justify-content: right;
-            height: 5em;
-            a {
-              text-decoration: none;
-            }
-
-            a:hover {
-            }
+          /* Style Logo */
+          img.logo{
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+          }
+          p{
+            display: inline-block;
+            position: absolute;
+            font-size: 2rem;
+            top: 25%;
+          }
+          /* Hide the links inside the navigation menu (except for logo/home) */
+          #myLinks {
+            display: none;
           }
 
-        } // end nav
+          /* Style navigation menu links */
+          a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+          }
+          /* Style the hamburger menu */
+          a.icon {
+            background-color: @blue;
+            color: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            bottom: 0;
+          }
 
+          /* Add a grey background color on mouse-over */
+          
+          i.fa.fa-bars{
 
-        section.call-to-action {
+            font-size: 30px;
+
+          }
+  
+        }
+
+      } // end header
+
+       /*  section.call-to-action {
           border: 1px solid black;
           background: @green;
           display: flex;
@@ -206,46 +228,41 @@ html {
           width: 30%;
           height: 20em;
 
-          /*  background-image: url("https://picsum.photos/700/");*/
+            background-image: url("https://picsum.photos/700/");
           background-image: url("../img/snow.jpg");
 
           h2 {
             font-size: 2em;
-            margin: 5%  5%;
+            margin: 5% 5%;
           }
 
-          div.button{
+          div.button {
             background: @blue;
-            color:@orange;
+            color: @orange;
             width: 30%;
             height: 20%;
             display: flex;
             align-items: center;
             margin: auto;
 
-            p{
+            p {
               text-align: center;
               margin: 0 auto;
               font-weight: bold;
-
             }
-
           }
 
-          div.button:hover{
+          div.button:hover {
             background: @orange;
-            color:@blue;
-            
-
+            color: @blue;
           }
-        }// end call to action
-      } // end header
-        section.features{
-          border: 1px solid black;
-          margin-left: 10%;
-          height: 50%;
-        }
+        } // end call to action */
       
+    /*   section.features {
+        border: 1px solid black;
+        margin-left: 10%;
+        height: 50%;
+      } */
     } // end container
   }
 }

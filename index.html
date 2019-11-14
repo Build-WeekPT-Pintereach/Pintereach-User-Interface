@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>PintReach</title>
   </head>
   
     <div class="container">
      <header> 
-         <nav>
-           <img src="" alt="">
-           
-           <div class="left">
-             <h2>PintReach</h2>
-            </div>
-
-           <div class="right">
-              <a href="">About Us</a>
-              <a href="">Login</a></div>
-         
-          </nav>
-        
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <img src="img/logo.png" class="logo" alt="logo" >
+          <p class="logo-text">PinteReach</p>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            
+            <a href="#about">About Us</a>
+            <a href="#login">Log In</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
     
     
-        <section class="call-to-action">
+        <!-- <section class="call-to-action">
             <h2>Discover content that will change your world!</h2>
            
             <div class="button">
@@ -34,10 +38,9 @@
             
             </div>
         </section>
-
-      </header>
-        <!-- delete this line  -->
-        <section class="features">
+ -->
+     
+   <!--      <section class="features">
                 <h2>Features</h2>
                 <ul>
                     <li><p>The best way to save save articles for later.</p></li>
@@ -47,8 +50,29 @@
                     <li><p>Article ranking </p></li>
                 </ul>
         </section>
-      </div>
+      </div> -->
 
       <footer>Copyright 2019</footer>
+
+      <script>
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+          const myLinks = document.getElementById("myLinks");
+          const brandText = document.querySelector("div.topnav p");
+
+          if (myLinks.style.display === "block") {
+            myLinks.style.display = "none";
+            brandText.style.top = "25%";
+
+          } else {
+            myLinks.style.display = "block";
+            brandText.style.top = "10.5%";
+          }
+
+
+
+        } 
+      
+      </script>
   </body>
 </html>
