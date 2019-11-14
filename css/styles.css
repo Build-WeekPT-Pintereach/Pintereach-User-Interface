@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -136,19 +139,83 @@ table {
 }
 /*colors*/
 /*General styles*/
+h2 {
+  font-size: 2.4em;
+}
 p {
+  font-size: 1.3em;
   font-family: "Montserrat", sans-serif;
 }
-html body div.container header nav a {
+a {
+  font-size: 2em;
+}
+html body {
+  font-size: 62.5%;
+}
+html body div.container {
+  border: 1px solid black;
+  background: #f7e6ca;
+}
+html body div.container header nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: #5193b3;
+  padding-bottom: 3%;
+}
+html body div.container header nav div.left {
+  display: flex;
+  justify-content: space-between;
+}
+html body div.container header nav div.left h2 {
+  align-self: left ;
+}
+html body div.container header nav div.right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  height: 5em;
+}
+html body div.container header nav div.right a {
   text-decoration: none;
 }
-html body div.container section.call-to-action {
-  /*  div.button {
-            border: 1px solid black;
-            width: 500px;
-			height: 300px;
-          }  */
+html body div.container header section.call-to-action {
+  border: 1px solid black;
+  background: #64c4c3;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 20% auto;
+  width: 30%;
+  height: 20em;
+  /*  background-image: url("https://picsum.photos/700/");*/
+  background-image: url("../img/snow.jpg");
 }
-html body div.container section.call-to-action p {
-  color: blue;
+html body div.container header section.call-to-action h2 {
+  font-size: 2em;
+  margin: 5%  5%;
+}
+html body div.container header section.call-to-action div.button {
+  background: #5193b3;
+  color: #f8d49a;
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+html body div.container header section.call-to-action div.button p {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+html body div.container header section.call-to-action div.button:hover {
+  background: #f8d49a;
+  color: #5193b3;
+}
+html body div.container section.features {
+  border: 1px solid black;
+  margin-left: 10%;
+  height: 50%;
 }

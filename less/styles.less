@@ -3,6 +3,9 @@
    License: none (public domain)
 */
 
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -140,46 +143,109 @@ table {
 @yellow: #f7e6ca;
 
 /*General styles*/
-
+h2 {
+  font-size: 2.4em;
+}
 p {
+  font-size: 1.3em;
   font-family: "Montserrat", sans-serif;
+}
+a {
+  font-size: 2em;
 }
 
 html {
+  
+
   body {
+    font-size: 62.5%;
     div.container {
+      border: 1px solid black;
+      background: @yellow;
+
       header {
         nav {
-          a {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          background: @blue;
+          padding-bottom: 3%;
+          div.left{
+
+            display: flex;
+            justify-content: space-between;
+            h2{
+              align-self: left ;            }
+          }
+          div.right{
+          
+           
+            display: flex;
+            align-items: flex-end;
+            justify-content: right;
+            height: 5em;
+            a {
               text-decoration: none;
-          }
-        }
-      }
-        section.call-to-action {
-          p {
-            color: blue;
-          }
+            }
 
-         /*  div.button {
-            border: 1px solid black;
-            width: 500px;
-			height: 300px;
-          }  */
-        }
-        
-      
-
-      section {
-        h2 {
-        }
-
-        ul {
-          li {
-            p {
+            a:hover {
             }
           }
+
+        } // end nav
+
+
+        section.call-to-action {
+          border: 1px solid black;
+          background: @green;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+          margin: 20% auto;
+          width: 30%;
+          height: 20em;
+
+          /*  background-image: url("https://picsum.photos/700/");*/
+          background-image: url("../img/snow.jpg");
+
+          h2 {
+            font-size: 2em;
+            margin: 5%  5%;
+          }
+
+          div.button{
+            background: @blue;
+            color:@orange;
+            width: 30%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+
+            p{
+              text-align: center;
+              margin: 0 auto;
+              font-weight: bold;
+
+            }
+
+          }
+
+          div.button:hover{
+            background: @orange;
+            color:@blue;
+            
+
+          }
+        }// end call to action
+      } // end header
+        section.features{
+          border: 1px solid black;
+          margin-left: 10%;
+          height: 50%;
         }
-      }
-    } //end of container
+      
+    } // end container
   }
 }
