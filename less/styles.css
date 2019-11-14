@@ -222,6 +222,7 @@ html body div.container header div.topnav img.logo {
 html body div.container header div.topnav p {
   display: inline-block;
   position: absolute;
+  color: whitesmoke;
   font-size: 2rem;
   top: 25%;
 }
@@ -237,7 +238,10 @@ html body div.container header div.topnav a {
 }
 html body div.container header div.topnav a.icon {
   background-color: #5193b3;
-  color: black;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 12px;
+  padding: -0.2% 2.5% -0.2% 2.5%;
   display: block;
   position: absolute;
   right: 0;

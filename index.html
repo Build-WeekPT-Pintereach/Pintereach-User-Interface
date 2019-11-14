@@ -59,14 +59,19 @@
         function myFunction() {
           const myLinks = document.getElementById("myLinks");
           const brandText = document.querySelector("div.topnav p");
+          const menuBorder = document.querySelector("a.icon");
 
           if (myLinks.style.display === "block") {
             myLinks.style.display = "none";
             brandText.style.top = "25%";
+            menuBorder.style.border.padding = "-.2% 2.5% -.2% 2.5%";
+            menuBorder.style.border = "3px solid whitesmoke";
+            menuBorder.style.borderRadius = "12px";
 
           } else {
             myLinks.style.display = "block";
             brandText.style.top = "10.5%";
+            menuBorder.style.border = "none";
           }
 
 
