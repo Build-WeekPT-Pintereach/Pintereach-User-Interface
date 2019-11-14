@@ -140,10 +140,10 @@ table {
 /*colors*/
 /*General styles*/
 h2 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
 }
 p {
-  font-size: 1.3em;
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -247,4 +247,11 @@ html body div.container header div.topnav a.icon {
 }
 html body div.container header div.topnav i.fa.fa-bars {
   font-size: 30px;
+}
+html body div.container footer {
+  background: #5193b3;
+}
+html body div.container footer p {
+  font-size: 1rem;
+  text-align: center;
 }
