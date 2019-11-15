@@ -111,6 +111,7 @@ section {
 }
 body {
   line-height: 1;
+  /*margin: 0;*/
 }
 ol,
 ul {
@@ -142,12 +143,14 @@ table {
 @orange: #f8d49a;
 @yellow: #f7e6ca;
 
+@white: whitesmoke;
+
 /*General styles*/
 h2 {
   font-size: 2.4rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -157,11 +160,23 @@ a {
 html {
   body {
     font-size: 62.5%;
+    margin: 0;
+
+    
+
     div.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       border: 1px solid black;
       background: @yellow;
 
       header {
+
+        background: @blue;
+        width: 100%;
+        
         /* Style the navigation menu */
         div.topnav {
           overflow: hidden;
@@ -177,7 +192,7 @@ html {
           p{
             display: inline-block;
             position: absolute;
-            color: whitesmoke;
+            color: @white;
             font-size: 2rem;
             top: 25%;
           }
@@ -197,8 +212,8 @@ html {
           /* Style the hamburger menu */
           a.icon {
             background-color: @blue;
-            color: whitesmoke;
-            border: 3px solid whitesmoke;
+            color: @white;
+            border: 3px solid @white;
             border-radius: 12px;
             padding: -.2% 2.5% -.2% 2.5%;
             display: block;
@@ -220,40 +235,50 @@ html {
   
         }
 
-      } // end header
+      
 
-       /*  section.call-to-action {
-          border: 1px solid black;
-          background: @green;
+        section.call-to-action {
           display: flex;
           flex-direction: column;
+          justify-items: center;
           align-content: center;
           align-items: center;
-          margin: 20% auto;
-          width: 30%;
-          height: 20em;
+          width: 100%;
+          margin-bottom: 10%;
 
-            background-image: url("https://picsum.photos/700/");
-          background-image: url("../img/snow.jpg");
 
-          h2 {
-            font-size: 2em;
-            margin: 5% 5%;
+          h1 {
+            color: @white;
+            font-size: 2rem;
+            margin: 10% 5% auto;
+            width: 90%;
+            font-weight: bold;
+            line-height: 1.4em;
+            padding-bottom: 10%;
+          }
+          p{
+            color: @white;
+            font-size: 1rem;
+            line-height: 1.5em;
+            width: 80%;
           }
 
-          div.button {
-            background: @blue;
+           div.button {
+            background: @green;
             color: @orange;
-            width: 30%;
-            height: 20%;
+            width: 60%;
+            height: 50%;
             display: flex;
             align-items: center;
-            margin: auto;
+            margin: 10%;
 
             p {
               text-align: center;
+              color: @white;
               margin: 0 auto;
               font-weight: bold;
+              padding: 8%;
+              margin: 0 auto;
             }
           }
 
@@ -262,6 +287,7 @@ html {
             color: @blue;
           }
         } // end call to action */
+        } // end header
       
     /*   section.features {
         border: 1px solid black;

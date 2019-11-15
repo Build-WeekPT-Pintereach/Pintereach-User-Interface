@@ -109,6 +109,7 @@ section {
 }
 body {
   line-height: 1;
+  /*margin: 0;*/
 }
 ol,
 ul {
@@ -143,7 +144,7 @@ h2 {
   font-size: 2.4rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -151,50 +152,15 @@ a {
 }
 html body {
   font-size: 62.5%;
+  margin: 0;
 }
 html body div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
   background: #f7e6ca;
-  /*  section.call-to-action {
-          border: 1px solid black;
-          background: @green;
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          align-items: center;
-          margin: 20% auto;
-          width: 30%;
-          height: 20em;
-
-            background-image: url("https://picsum.photos/700/");
-          background-image: url("../img/snow.jpg");
-
-          h2 {
-            font-size: 2em;
-            margin: 5% 5%;
-          }
-
-          div.button {
-            background: @blue;
-            color: @orange;
-            width: 30%;
-            height: 20%;
-            display: flex;
-            align-items: center;
-            margin: auto;
-
-            p {
-              text-align: center;
-              margin: 0 auto;
-              font-weight: bold;
-            }
-          }
-
-          div.button:hover {
-            background: @orange;
-            color: @blue;
-          }
-        } // end call to action */
   /*   section.features {
         border: 1px solid black;
         margin-left: 10%;
@@ -202,6 +168,8 @@ html body div.container {
       } */
 }
 html body div.container header {
+  background: #5193b3;
+  width: 100%;
   /* Style the navigation menu */
 }
 html body div.container header div.topnav {
@@ -251,6 +219,50 @@ html body div.container header div.topnav a.icon {
 }
 html body div.container header div.topnav i.fa.fa-bars {
   font-size: 30px;
+}
+html body div.container header section.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+html body div.container header section.call-to-action h1 {
+  color: whitesmoke;
+  font-size: 2rem;
+  margin: 10% 5% auto;
+  width: 90%;
+  font-weight: bold;
+  line-height: 1.4em;
+  padding-bottom: 10%;
+}
+html body div.container header section.call-to-action p {
+  color: whitesmoke;
+  font-size: 1rem;
+  line-height: 1.5em;
+  width: 80%;
+}
+html body div.container header section.call-to-action div.button {
+  background: #64c4c3;
+  color: #f8d49a;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin: 10%;
+}
+html body div.container header section.call-to-action div.button p {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 8%;
+  margin: 0 auto;
+}
+html body div.container header section.call-to-action div.button:hover {
+  background: #f8d49a;
+  color: #5193b3;
 }
 html body div.container footer {
   background: #5193b3;
