@@ -224,7 +224,8 @@ html body div.container header section.call-to-action {
   align-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  /* TODO change colors for hover and the div.button (see Trello notes) */
 }
 html body div.container header section.call-to-action h1 {
   color: whitesmoke;
