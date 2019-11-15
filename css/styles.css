@@ -141,10 +141,13 @@ table {
 /*colors*/
 /*General styles*/
 h2 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.4rem;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -159,13 +162,15 @@ html body div.container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  background: #f7e6ca;
-  /*   section.features {
-        border: 1px solid black;
-        margin-left: 10%;
-        height: 50%;
-      } */
+  width: 100%;
+  /* footer {
+        background: @blue;
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }*/
 }
 html body div.container header {
   background: #5193b3;
@@ -264,10 +269,31 @@ html body div.container header section.call-to-action div.button:hover {
   background: #f8d49a;
   color: #5193b3;
 }
-html body div.container footer {
-  background: #5193b3;
+html body div.container section.features {
+  width: 90%;
+  height: 50%;
+  margin: 10% 10% auto;
+  display: flex;
+  flex-direction: column;
+  /* todo modify this, use code pen here: https://codepen.io/squarerobin/pen/VwwVZWb */
 }
-html body div.container footer p {
-  font-size: 1rem;
-  text-align: center;
+html body div.container section.features h2 {
+  margin-bottom: 10%;
+  font-weight: bold;
+}
+html body div.container section.features ul {
+  width: 90%;
+  align-self: center;
+  display: inline-block;
+}
+html body div.container section.features li {
+  line-height: 2rem;
+  margin: 5% 0;
+}
+html body div.container section.features li::before {
+  font-family: 'FontAwesome';
+  content: '\f0a9';
+  margin: 0 0 5% 0;
+  color: #5193b3;
+  -webkit-font-smoothing: antialiased;
 }
