@@ -285,7 +285,6 @@ html body div.container header section.call-to-action {
   align-items: center;
   width: 100%;
   margin-bottom: 5%;
-  /* TODO change colors for hover and the div.button (see Trello notes) */
 }
 html body div.container header section.call-to-action h1 {
   color: whitesmoke;
@@ -315,9 +314,11 @@ html body div.container header section.call-to-action div.button a {
   text-align: center;
   color: whitesmoke;
   font-size: 1.3rem;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
   font-weight: bold;
   padding: 8%;
-  margin: 0 auto;
   text-decoration: none;
 }
 html body div.container header section.call-to-action div.button:hover {
@@ -333,6 +334,10 @@ html body div.container section.features {
 html body div.container section.features h2 {
   margin-bottom: 10%;
   font-weight: bold;
+  text-align: center;
+}
+html body div.container section.features h3 {
+  text-align: center;
 }
 html body div.container section.features ul {
   width: 90%;
