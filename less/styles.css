@@ -163,14 +163,6 @@ html body div.container {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* footer {
-        background: @blue;
-
-        p {
-          font-size: 1rem;
-          text-align: center;
-        }
-      }*/
 }
 html body div.container header {
   background: #5193b3;
@@ -296,4 +288,12 @@ html body div.container section.features li::before {
   margin: 0 0 5% 0;
   color: #5193b3;
   -webkit-font-smoothing: antialiased;
+}
+html body div.container footer {
+  background: #5193b3;
+  width: 100%;
+}
+html body div.container footer p {
+  font-size: 1rem;
+  text-align: center;
 }
