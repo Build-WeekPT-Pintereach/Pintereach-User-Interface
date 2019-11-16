@@ -361,7 +361,7 @@ html body div.container section.features h3 {
 }
 html body div.container section.features ul {
   max-width: 90%;
-  margin: 0 10% auto;
+  margin: 0  auto;
 }
 html body div.container section.features li {
   line-height: 2.3rem;
