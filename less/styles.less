@@ -239,6 +239,16 @@ html {
   }
 }
 
+// mixins
+
+.center(){
+  place-self: center;
+  justify-items: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+}
+
 // Styles
 
 html {
@@ -316,9 +326,7 @@ html {
         section.call-to-action {
           display: flex;
           flex-direction: column;
-          justify-items: center;
-          align-content: center;
-          align-items: center;
+          .center();
           width: 100%;
           margin-bottom: 5%;
 

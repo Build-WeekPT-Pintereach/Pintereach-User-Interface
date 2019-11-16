@@ -280,9 +280,11 @@ html body div.container header div.topnav i.fa.fa-bars {
 html body div.container header section.call-to-action {
   display: flex;
   flex-direction: column;
+  place-self: center;
   justify-items: center;
-  align-content: center;
   align-items: center;
+  place-content: center;
+  text-align: center;
   width: 100%;
   margin-bottom: 5%;
 }
