@@ -212,6 +212,11 @@ html body div.container p {
 html body div.container a {
   font-size: 2em;
 }
+.center {
+  place-self: center;
+  place-content: center;
+  text-align: center;
+}
 html body {
   font-size: 62.5%;
   margin: 0;
