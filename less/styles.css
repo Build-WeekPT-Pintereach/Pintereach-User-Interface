@@ -281,8 +281,6 @@ html body div.container header section.call-to-action {
   display: flex;
   flex-direction: column;
   place-self: center;
-  justify-items: center;
-  align-items: center;
   place-content: center;
   text-align: center;
   width: 100%;
