@@ -1,0 +1,74 @@
+
+/*General styles*/
+
+
+
+h1, h2, h3, p, a{
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  a {
+    font-size: 2em;
+  }
+  
+
+/*fonts*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+// FontAwesome styles
+
+/* general reset/setup styling for icons - needed on all */
+.icon::before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* defining the right font-family/font-face for each style */
+.icon-solid::before,
+.icon-regular::before,
+.icon-light::before {
+  font-family: "FontAwesome";
+}
+
+.icon-brand::before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+/* defining the right weight for each style */
+.icon-solid::before {
+  font-weight: 900;
+}
+
+
+.icon-brand::before {
+  font-weight: 400;
+}
+
+/* defining the right unicode values for each icon */
+.icon-award::before {
+  content: "\f0a9";
+}
+
+
+.icon::before {
+  margin-right: 0.5rem;
+}
+
