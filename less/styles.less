@@ -241,8 +241,9 @@ html {
 
 // mixins
 
-.center{
+.center(){
   place-self: center;
+  align-items: center;
   place-content: center;
   text-align: center;
 }
@@ -324,7 +325,7 @@ html {
         section.call-to-action {
           display: flex;
           flex-direction: column;
-          .center;
+          .center();
           width: 100%;
           margin-bottom: 5%;
 

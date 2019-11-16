@@ -212,11 +212,6 @@ html body div.container p {
 html body div.container a {
   font-size: 2em;
 }
-.center {
-  place-self: center;
-  place-content: center;
-  text-align: center;
-}
 html body {
   font-size: 62.5%;
   margin: 0;
@@ -286,6 +281,7 @@ html body div.container header section.call-to-action {
   display: flex;
   flex-direction: column;
   place-self: center;
+  align-items: center;
   place-content: center;
   text-align: center;
   width: 100%;
