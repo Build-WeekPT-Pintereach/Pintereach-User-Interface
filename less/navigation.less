@@ -11,12 +11,24 @@
       width: 60px;
       height: 60px;
     }
-    p {
+    h1 {
       display: inline-block;
       position: absolute;
       color: @white;
-      font-size: 2rem;
       top: 25%;
+
+      @media @firefox-minimum-width{
+        font-size: 1.7rem; // So it looks good on Firefox, which has a narrower screen width
+      }
+
+      @media @small-mobile{
+          font-size: 1.9rem;
+
+      }
+      @media @mobile{
+          font-size: 2rem;
+      }
+     
       
     }
     /* Hide the links inside the navigation menu (except for logo/home) */
@@ -27,29 +39,25 @@
     /* Style navigation menu links */
     a {
       color: white;
-      padding: 14px 16px;
+      padding: 1.4rem 1.6rem;
       text-decoration: none;
-      font-size: 17px;
       display: block;
     }
     /* Style the hamburger menu */
     a.icon {
       background-color: @blue;
       color: @white;
-      border: 3px solid @white;
-      border-radius: 12px;
-      padding: -0.2% 2.5% -0.2% 2.5%;
       display: block;
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 0.7rem;
+      top: 0.9rem;
+      padding: 0;
       height: 100%;
-      bottom: 0;
     }
 
     /* Add a grey background color on mouse-over */
 
     i.fa.fa-bars {
-      font-size: 30px;
+      font-size: 2rem;
     }
   }

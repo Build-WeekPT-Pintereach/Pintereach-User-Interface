@@ -1,4 +1,6 @@
+/* color assignments */
 /*variables.less*/
+/* screen widths */
 .center {
   place-self: center;
   align-items: center;
@@ -137,6 +139,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  outline: none;
+}
 /*General styles*/
 h1,
 h2,
@@ -217,38 +222,48 @@ div.topnav img.logo {
   width: 60px;
   height: 60px;
 }
-div.topnav p {
+div.topnav h1 {
   display: inline-block;
   position: absolute;
   color: whitesmoke;
-  font-size: 2rem;
   top: 25%;
+}
+@media (min-width: 288px) {
+  div.topnav h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 314px) {
+  div.topnav h1 {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 500px) {
+  div.topnav h1 {
+    font-size: 2rem;
+  }
 }
 div.topnav #myLinks {
   display: none;
 }
 div.topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 1.4rem 1.6rem;
   text-decoration: none;
-  font-size: 17px;
   display: block;
 }
 div.topnav a.icon {
   background-color: #5193b3;
   color: whitesmoke;
-  border: 3px solid whitesmoke;
-  border-radius: 12px;
-  padding: -0.2% 2.5% -0.2% 2.5%;
   display: block;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0.7rem;
+  top: 0.9rem;
+  padding: 0;
   height: 100%;
-  bottom: 0;
 }
 div.topnav i.fa.fa-bars {
-  font-size: 30px;
+  font-size: 2rem;
 }
 footer {
   background: #5193b3;
@@ -263,7 +278,6 @@ footer p {
 }
 html body {
   font-size: 62.5%;
-  margin: 0;
 }
 html body div.container {
   display: flex;
@@ -271,6 +285,7 @@ html body div.container {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-width: 0px;
 }
 html body div.container header {
   background: #5193b3;
@@ -338,13 +353,15 @@ html body div.container section.features h2 {
 }
 html body div.container section.features h3 {
   text-align: center;
+  line-height: 2rem;
 }
 html body div.container section.features ul {
-  width: 90%;
+  max-width: 90%;
+  margin: 0  auto;
 }
 html body div.container section.features li {
-  line-height: 2rem;
-  margin: 5% 0;
+  line-height: 2.3rem;
+  margin-top: 3%;
 }
 html body div.container section.features p.icon-solid::before {
   color: #64c4c3;
