@@ -207,7 +207,7 @@ a {
   margin-right: 0.5rem;
 }
 /* Style the navigation menu */
-div.topnav {
+nav.topnav {
   overflow: hidden;
   background-color: #5193b3;
   padding: 0 5%;
@@ -223,37 +223,37 @@ div.topnav {
   /* hamburger menu */
   /* Add a grey background color on mouse-over */
 }
-div.topnav img.logo {
+nav.topnav img.logo {
   display: inline-block;
   width: 60px;
   height: 60px;
 }
-div.topnav h1 {
+nav.topnav h1 {
   display: inline-block;
   position: absolute;
   color: whitesmoke;
   top: 25%;
 }
 @media (min-width: 288px) {
-  div.topnav h1 {
+  nav.topnav h1 {
     font-size: 1.7rem;
   }
 }
 @media (min-width: 314px) {
-  div.topnav h1 {
+  nav.topnav h1 {
     font-size: 1.9rem;
   }
 }
 @media (min-width: 500px) {
-  div.topnav h1 {
+  nav.topnav h1 {
     font-size: 2rem;
   }
 }
-div.topnav #myLinks {
+nav.topnav #myLinks {
   display: none;
 }
 @media (min-width: 980px) {
-  div.topnav #myLinks {
+  nav.topnav #myLinks {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -263,18 +263,18 @@ div.topnav #myLinks {
     right: 0rem;
   }
 }
-div.topnav a {
+nav.topnav a {
   color: white;
   padding: 1.4rem 1.6rem;
   text-decoration: none;
   display: block;
 }
 @media (min-width: 980px) {
-  div.topnav a a.about-us {
+  nav.topnav a a.about-us {
     margin-left: 5%;
   }
 }
-div.topnav a.icon {
+nav.topnav a.icon {
   background-color: #5193b3;
   color: whitesmoke;
   display: block;
@@ -285,11 +285,11 @@ div.topnav a.icon {
   height: 100%;
 }
 @media (min-width: 980px) {
-  div.topnav a.icon {
+  nav.topnav a.icon {
     display: none;
   }
 }
-div.topnav i.fa.fa-bars {
+nav.topnav i.fa.fa-bars {
   font-size: 2rem;
 }
 footer {
@@ -307,7 +307,7 @@ footer p {
 html body {
   font-size: 62.5%;
 }
-html body nav.container {
+html body div.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,11 +316,11 @@ html body nav.container {
   width: 100%;
   min-width: 0px;
 }
-html body nav.container header {
+html body div.container header {
   background: #5193b3;
   width: 100%;
 }
-html body nav.container header section.call-to-action {
+html body div.container header section.call-to-action {
   display: flex;
   flex-direction: column;
   place-self: center;
@@ -332,19 +332,19 @@ html body nav.container header section.call-to-action {
   margin-bottom: 5%;
   color: whitesmoke;
 }
-html body nav.container header section.call-to-action h1 {
+html body div.container header section.call-to-action h1 {
   margin: 10% 5% auto;
   width: 90%;
   font-weight: bold;
   line-height: 1.4em;
   padding-bottom: 10%;
 }
-html body nav.container header section.call-to-action p {
+html body div.container header section.call-to-action p {
   font-size: 1rem;
   line-height: 1.5em;
   width: 80%;
 }
-html body nav.container header section.call-to-action div.button {
+html body div.container header section.call-to-action div.button {
   background: #5193b3;
   width: 60%;
   max-width: 234px;
@@ -355,7 +355,7 @@ html body nav.container header section.call-to-action div.button {
   border: 4px solid whitesmoke;
   color: whitesmoke;
 }
-html body nav.container header section.call-to-action div.button a {
+html body div.container header section.call-to-action div.button a {
   text-align: center;
   font-size: 1.3rem;
   align-self: center;
@@ -366,21 +366,21 @@ html body nav.container header section.call-to-action div.button a {
   color: whitesmoke;
   text-decoration: none;
 }
-html body nav.container header section.call-to-action div.button:hover {
+html body div.container header section.call-to-action div.button:hover {
   background: #44b1b0;
 }
-html body nav.container header section.call-to-action img {
+html body div.container header section.call-to-action img {
   display: none;
   margin-bottom: 5%;
 }
 @media (min-width: 757px) {
-  html body nav.container header section.call-to-action img {
+  html body div.container header section.call-to-action img {
     display: flex;
     border: 4.5px solid #98bfd2;
     border-radius: 8px;
   }
 }
-html body nav.container section.features {
+html body div.container section.features {
   width: 90%;
   height: 50%;
   margin: 7% auto;
@@ -388,25 +388,25 @@ html body nav.container section.features {
   flex-direction: column;
   color: #407791;
 }
-html body nav.container section.features h2 {
+html body div.container section.features h2 {
   margin-bottom: 5%;
   font-weight: bold;
   text-align: center;
 }
-html body nav.container section.features h3 {
+html body div.container section.features h3 {
   text-align: center;
   line-height: 2rem;
   margin-bottom: 4%;
 }
-html body nav.container section.features ul {
+html body div.container section.features ul {
   max-width: 90%;
   margin: 0  auto;
 }
-html body nav.container section.features li {
+html body div.container section.features li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
-html body nav.container section.one {
+html body div.container section.one {
   width: 90%;
   height: 50%;
   margin: 7% auto;
@@ -414,21 +414,21 @@ html body nav.container section.one {
   flex-direction: column;
   color: #407791;
 }
-html body nav.container section.one h2 {
+html body div.container section.one h2 {
   margin-bottom: 5%;
   font-weight: bold;
   text-align: center;
 }
-html body nav.container section.one h3 {
+html body div.container section.one h3 {
   text-align: center;
   line-height: 2rem;
   margin-bottom: 4%;
 }
-html body nav.container section.one ul {
+html body div.container section.one ul {
   max-width: 90%;
   margin: 0  auto;
 }
-html body nav.container section.one li {
+html body div.container section.one li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
