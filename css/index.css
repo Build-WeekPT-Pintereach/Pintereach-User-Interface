@@ -207,7 +207,7 @@ a {
   margin-right: 0.5rem;
 }
 /* Style the navigation menu */
-nav.topnav {
+nav.top-nav {
   overflow: hidden;
   background-color: #5193b3;
   padding: 0 5%;
@@ -223,37 +223,37 @@ nav.topnav {
   /* hamburger menu */
   /* Add a grey background color on mouse-over */
 }
-nav.topnav img.logo {
+nav.top-nav img.logo {
   display: inline-block;
   width: 60px;
   height: 60px;
 }
-nav.topnav h1 {
+nav.top-nav h1 {
   display: inline-block;
   position: absolute;
   color: whitesmoke;
   top: 25%;
 }
 @media (min-width: 288px) {
-  nav.topnav h1 {
+  nav.top-nav h1 {
     font-size: 1.7rem;
   }
 }
 @media (min-width: 314px) {
-  nav.topnav h1 {
+  nav.top-nav h1 {
     font-size: 1.9rem;
   }
 }
 @media (min-width: 500px) {
-  nav.topnav h1 {
+  nav.top-nav h1 {
     font-size: 2rem;
   }
 }
-nav.topnav #myLinks {
+nav.top-nav #myLinks {
   display: none;
 }
 @media (min-width: 980px) {
-  nav.topnav #myLinks {
+  nav.top-nav #myLinks {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -263,18 +263,18 @@ nav.topnav #myLinks {
     right: 0rem;
   }
 }
-nav.topnav a {
+nav.top-nav a {
   color: white;
   padding: 1.4rem 1.6rem;
   text-decoration: none;
   display: block;
 }
 @media (min-width: 980px) {
-  nav.topnav a a.about-us {
+  nav.top-nav a a.about-us {
     margin-left: 5%;
   }
 }
-nav.topnav a.icon {
+nav.top-nav a.icon {
   background-color: #5193b3;
   color: whitesmoke;
   display: block;
@@ -285,11 +285,11 @@ nav.topnav a.icon {
   height: 100%;
 }
 @media (min-width: 980px) {
-  nav.topnav a.icon {
+  nav.top-nav a.icon {
     display: none;
   }
 }
-nav.topnav i.fa.fa-bars {
+nav.top-nav i.fa.fa-bars {
   font-size: 2rem;
 }
 footer {
