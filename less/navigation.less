@@ -3,7 +3,18 @@
   div.topnav {
     overflow: hidden;
     background-color: @blue;
-    position: relative;
+    
+    max-width: 750px;
+    padding: 0 5%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    left: 0;
+    z-index: 1;
+    @media @tablet{
+
+    }
 
     /* Style Logo */
     img.logo {
@@ -28,12 +39,23 @@
       @media @mobile{
           font-size: 2rem;
       }
+
+     
      
       
     }
     /* Hide the links inside the navigation menu (except for logo/home) */
     #myLinks {
       display: none;
+      @media @desktop{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: absolute;
+        /*margin-top: -10.5%;*/
+        top: -.3rem;    
+        right: 0rem; 
+      }
     }
 
     /* Style navigation menu links */
@@ -42,17 +64,27 @@
       padding: 1.4rem 1.6rem;
       text-decoration: none;
       display: block;
+      @media @desktop{
+        
+        a.about-us{
+         margin-left: 5%;
+        }
+      }
+     
     }
-    /* Style the hamburger menu */
+    /* hamburger menu */
     a.icon {
       background-color: @blue;
       color: @white;
       display: block;
       position: absolute;
-      right: 0.7rem;
+      right: 5%;
       top: 0.9rem;
       padding: 0;
       height: 100%;
+      @media @desktop{
+        display: none;
+      }
     }
 
     /* Add a grey background color on mouse-over */ 
