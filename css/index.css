@@ -336,19 +336,20 @@ html body div.container header section.call-to-action {
   text-align: center;
   width: 100%;
   margin-bottom: 5%;
-  margin-top: 8rem;
+  margin-top: 12rem;
   color: whitesmoke;
 }
 html body div.container header section.call-to-action h1 {
   width: 90%;
   font-weight: bold;
   line-height: 1.4em;
-  margin-bottom: 10%;
+  margin-bottom: 2rem;
 }
 html body div.container header section.call-to-action p {
   font-size: 1rem;
   line-height: 1.5em;
   width: 80%;
+  max-width: 30rem;
 }
 html body div.container header section.call-to-action div.button {
   background: #5193b3;
