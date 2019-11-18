@@ -217,43 +217,45 @@ nav.top-nav {
   right: 0%;
   left: 0;
   z-index: 1;
+}
+nav.top-nav div.nav-container {
   /* Style Logo */
   /* Hide the links inside the navigation menu (except for logo/home) */
   /* Style navigation menu links */
   /* hamburger menu */
   /* Add a grey background color on mouse-over */
 }
-nav.top-nav img.logo {
+nav.top-nav div.nav-container img.logo {
   display: inline-block;
   width: 60px;
   height: 60px;
 }
-nav.top-nav h1 {
+nav.top-nav div.nav-container h1 {
   display: inline-block;
   position: absolute;
   color: whitesmoke;
   top: 25%;
 }
 @media (min-width: 288px) {
-  nav.top-nav h1 {
+  nav.top-nav div.nav-container h1 {
     font-size: 1.7rem;
   }
 }
 @media (min-width: 314px) {
-  nav.top-nav h1 {
+  nav.top-nav div.nav-container h1 {
     font-size: 1.9rem;
   }
 }
 @media (min-width: 500px) {
-  nav.top-nav h1 {
+  nav.top-nav div.nav-container h1 {
     font-size: 2rem;
   }
 }
-nav.top-nav #myLinks {
+nav.top-nav div.nav-container #myLinks {
   display: none;
 }
 @media (min-width: 980px) {
-  nav.top-nav #myLinks {
+  nav.top-nav div.nav-container #myLinks {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -263,18 +265,18 @@ nav.top-nav #myLinks {
     right: 0rem;
   }
 }
-nav.top-nav a {
+nav.top-nav div.nav-container a {
   color: white;
   padding: 1.4rem 1.6rem;
   text-decoration: none;
   display: block;
 }
 @media (min-width: 980px) {
-  nav.top-nav a a.about-us {
+  nav.top-nav div.nav-container a a.about-us {
     margin-left: 5%;
   }
 }
-nav.top-nav a.icon {
+nav.top-nav div.nav-container a.icon {
   background-color: #5193b3;
   color: whitesmoke;
   display: block;
@@ -285,11 +287,11 @@ nav.top-nav a.icon {
   height: 100%;
 }
 @media (min-width: 980px) {
-  nav.top-nav a.icon {
+  nav.top-nav div.nav-container a.icon {
     display: none;
   }
 }
-nav.top-nav i.fa.fa-bars {
+nav.top-nav div.nav-container i.fa.fa-bars {
   font-size: 2rem;
 }
 footer {
@@ -298,11 +300,16 @@ footer {
   width: 100%;
   position: relative;
   bottom: 0;
+  height: 3rem;
+  display: flex;
 }
 footer p {
   font-size: 1rem;
+  place-self: center;
+  align-items: center;
+  place-content: center;
   text-align: center;
-  margin: 5% auto;
+  margin: auto;
 }
 html body {
   font-size: 62.5%;
@@ -328,16 +335,15 @@ html body div.container header section.call-to-action {
   place-content: center;
   text-align: center;
   width: 100%;
-  margin-top: 15%;
   margin-bottom: 5%;
+  margin-top: 8rem;
   color: whitesmoke;
 }
 html body div.container header section.call-to-action h1 {
-  margin: 10% 5% auto;
   width: 90%;
   font-weight: bold;
   line-height: 1.4em;
-  padding-bottom: 10%;
+  margin-bottom: 10%;
 }
 html body div.container header section.call-to-action p {
   font-size: 1rem;
@@ -347,8 +353,7 @@ html body div.container header section.call-to-action p {
 html body div.container header section.call-to-action div.button {
   background: #5193b3;
   width: 60%;
-  max-width: 234px;
-  height: 50%;
+  max-width: 10rem;
   display: flex;
   align-items: center;
   margin: 5%;

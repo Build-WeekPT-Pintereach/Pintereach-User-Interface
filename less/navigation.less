@@ -1,19 +1,18 @@
-  
-  /* Style the navigation menu */
-  nav.top-nav {
-    overflow: hidden;
-    background-color: @blue;
-    padding: 0 5%;
-    margin: 0 auto;
-    position: fixed;
-    top: 0;
-    right: 0%;
-    left: 0;
-    z-index: 1;
-    @media @tablet{
+/* Style the navigation menu */
+nav.top-nav {
+  overflow: hidden;
+  background-color: @blue;
+  padding: 0 5%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  left: 0;
+  z-index: 1;
 
-    }
+  div.nav-container {
 
+    
     /* Style Logo */
     img.logo {
       display: inline-block;
@@ -26,33 +25,28 @@
       color: @white;
       top: 25%;
 
-      @media @firefox-minimum-width{
+      @media @firefox-minimum-width {
         font-size: 1.7rem; // So it looks good on Firefox, which has a narrower screen width
       }
 
-      @media @small-mobile{
-          font-size: 1.9rem;
-
+      @media @small-mobile {
+        font-size: 1.9rem;
       }
-      @media @mobile{
-          font-size: 2rem;
+      @media @mobile {
+        font-size: 2rem;
       }
-
-     
-     
-      
     }
     /* Hide the links inside the navigation menu (except for logo/home) */
     #myLinks {
       display: none;
-      @media @desktop{
-        display:flex;
+      @media @desktop {
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         position: absolute;
         /*margin-top: -10.5%;*/
-        top: -.3rem;    
-        right: 0rem; 
+        top: -0.3rem;
+        right: 0rem;
       }
     }
 
@@ -62,13 +56,11 @@
       padding: 1.4rem 1.6rem;
       text-decoration: none;
       display: block;
-      @media @desktop{
-        
-        a.about-us{
-         margin-left: 5%;
+      @media @desktop {
+        a.about-us {
+          margin-left: 5%;
         }
       }
-     
     }
     /* hamburger menu */
     a.icon {
@@ -80,14 +72,15 @@
       top: 0.9rem;
       padding: 0;
       height: 100%;
-      @media @desktop{
+      @media @desktop {
         display: none;
       }
     }
 
-    /* Add a grey background color on mouse-over */ 
+    /* Add a grey background color on mouse-over */
 
     i.fa.fa-bars {
       font-size: 2rem;
     }
   }
+}
