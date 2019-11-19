@@ -31,48 +31,49 @@ html {
           margin-top: 12rem;
           color: @white-text;
 
-          h1 {
-            
-            width: 90%;
-            font-weight: bold;
-            line-height: 1.4em;
-            margin-bottom: 2rem;
-          }
-          p {
-            font-size: 1rem;
-            line-height: 1.5em;
-            width: 80%;
-            max-width: 30rem;
-          }
-
-          div.button {
-            background: @blue;
-            width: 60%;
-            max-width: 10rem;
-            display: flex;
-            flex-direction: column
-            .center();
-            margin: 5% auto;
-            border: 4px solid @white;
-            color: @white-text;
-
-            a {
-              text-align: center;
-              font-size: 1.3rem;
-              display: flex;
+          left{
+            h1 {
               
-              margin: auto;
+              width: 90%;
               font-weight: bold;
-              padding: 8%;
+              line-height: 1.4em;
+              margin-bottom: 2rem;
+            }
+            p {
+              font-size: 1rem;
+              line-height: 1.5em;
+              width: 80%;
+              max-width: 30rem;
+            }
+
+            div.button {
+              background: @blue;
+              width: 60%;
+              max-width: 10rem;
+              display: flex;
+              flex-direction: column
+              .center();
+              margin: 5% auto;
+              border: 4px solid @white;
               color: @white-text;
-              text-decoration: none;
+
+              a {
+                text-align: center;
+                font-size: 1.3rem;
+                display: flex;
+                
+                margin: auto;
+                font-weight: bold;
+                padding: 8%;
+                color: @white-text;
+                text-decoration: none;
+              }
+            }
+
+            div.button:hover {
+              background: darken(@green, 10%);
             }
           }
-
-          div.button:hover {
-            background: darken(@green, 10%);
-          }
-
           img{
             display: none;
             margin-bottom: 5%;
@@ -92,7 +93,7 @@ html {
 
       } // end features
 
-      section.one{
+      section.lorem-paragraph{
         .section(90%, 50%);
       }
       
