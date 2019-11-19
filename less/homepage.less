@@ -102,6 +102,54 @@ html {
 
       section.lorem-paragraph {
         .section(90%, 50%);
+
+        @media @desktop{
+          display: flex;
+          flex-direction: row;
+        }
+        
+        img{
+          display: none;
+         
+          border: 3px solid @blue;
+          border-radius: 8px;
+          
+
+
+          @media @tablet{
+            display:flex;
+            .center();
+            width: 70%;
+            margin-top: 3%;
+          }
+
+          @media @desktop{
+            display:flex;
+            flex: 1;
+            order: 2;
+            margin-top: 3%;
+            padding: 2rem;
+
+          }
+        }
+
+        .text{
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          order: 1;
+          padding: 1rem;
+
+          @media @desktop{
+            padding: 2rem;
+
+          }
+
+
+        }
+
+
+
       }
     } // end container
   }

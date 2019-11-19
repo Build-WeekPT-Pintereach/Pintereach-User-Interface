@@ -451,3 +451,46 @@ html body div.container section.lorem-paragraph li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph {
+    display: flex;
+    flex-direction: row;
+  }
+}
+html body div.container section.lorem-paragraph img {
+  display: none;
+  border: 3px solid #5193b3;
+  border-radius: 8px;
+}
+@media (min-width: 757px) {
+  html body div.container section.lorem-paragraph img {
+    display: flex;
+    place-self: center;
+    align-items: center;
+    place-content: center;
+    text-align: center;
+    width: 70%;
+    margin-top: 3%;
+  }
+}
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph img {
+    display: flex;
+    flex: 1;
+    order: 2;
+    margin-top: 3%;
+    padding: 2rem;
+  }
+}
+html body div.container section.lorem-paragraph .text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  order: 1;
+  padding: 1rem;
+}
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph .text {
+    padding: 2rem;
+  }
+}
