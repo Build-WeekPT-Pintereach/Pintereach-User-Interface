@@ -478,7 +478,6 @@ html body div.container section.lorem-paragraph img {
     display: flex;
     flex: 1;
     order: 2;
-    margin-top: 3%;
     padding: 2rem;
   }
 }
