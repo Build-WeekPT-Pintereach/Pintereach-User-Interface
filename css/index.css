@@ -335,8 +335,21 @@ html body div.container header section.call-to-action {
   place-content: center;
   text-align: center;
   width: 100%;
-  margin: 5rem 5% auto auto ;
+  margin: 5rem 5% auto auto;
   color: whitesmoke;
+}
+@media (min-width: 980px) {
+  html body div.container header section.call-to-action {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8rem;
+  }
+  html body div.container header section.call-to-action .left {
+    min-width: 15rem;
+    max-width: 40%;
+    margin-right: 10%;
+  }
 }
 html body div.container header section.call-to-action h1 {
   width: 90%;

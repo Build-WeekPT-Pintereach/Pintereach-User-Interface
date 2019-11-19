@@ -1,11 +1,8 @@
-
 // Styles
 
 html {
   body {
     font-size: 62.5%;
-  
-    
 
     div.container {
       display: flex;
@@ -20,19 +17,31 @@ html {
         background: @header-bg;
         width: 100%;
 
-      
-
         section.call-to-action {
           display: flex;
           flex-direction: column;
           .center();
           width: 100%;
-          margin: 5rem 5% auto auto ;
+          margin: 5rem 5% auto auto;
           color: @white-text;
 
-          
+          @media @desktop {
+            flex-direction: row;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 8rem;
+
+            .left{
+              min-width: 15rem;
+              max-width: 40%;
+              margin-right: 10%;
+            }
+            .right{
+
+            }
+          }
+
           h1 {
-            
             width: 90%;
             font-weight: bold;
             line-height: 1.4em;
@@ -52,8 +61,7 @@ html {
             width: 60%;
             max-width: 10rem;
             display: flex;
-            flex-direction: column
-            .center();
+            flex-direction: column .center();
             margin: 5% auto;
             border: 4px solid @white;
             color: @white-text;
@@ -62,7 +70,7 @@ html {
               text-align: center;
               font-size: 1.3rem;
               display: flex;
-              
+
               margin: auto;
               font-weight: bold;
               padding: 8%;
@@ -75,11 +83,11 @@ html {
             background: darken(@green, 10%);
           }
 
-          img{
+          img {
             display: none;
             margin-bottom: 5%;
 
-            @media @tablet{
+            @media @tablet {
               display: flex;
               border: 4.5px solid lighten(@blue, 20%);
               border-radius: 8px;
@@ -90,14 +98,11 @@ html {
 
       section.features {
         .section(90%, 50%);
-              
-
       } // end features
 
-      section.lorem-paragraph{
+      section.lorem-paragraph {
         .section(90%, 50%);
       }
-      
     } // end container
   }
 }
