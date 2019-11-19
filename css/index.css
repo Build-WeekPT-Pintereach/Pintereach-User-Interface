@@ -335,23 +335,24 @@ html body div.container header section.call-to-action {
   place-content: center;
   text-align: center;
   width: 100%;
-  margin-bottom: 5%;
-  margin-top: 12rem;
+  margin: 5rem 5% auto auto ;
   color: whitesmoke;
 }
-html body div.container header section.call-to-action left h1 {
+html body div.container header section.call-to-action h1 {
   width: 90%;
   font-weight: bold;
   line-height: 1.4em;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
-html body div.container header section.call-to-action left p {
+html body div.container header section.call-to-action p {
   font-size: 1rem;
   line-height: 1.5em;
   width: 80%;
   max-width: 30rem;
+  margin: 0 auto;
 }
-html body div.container header section.call-to-action left div.button {
+html body div.container header section.call-to-action div.button {
   background: #5193b3;
   width: 60%;
   max-width: 10rem;
@@ -361,7 +362,7 @@ html body div.container header section.call-to-action left div.button {
   border: 4px solid whitesmoke;
   color: whitesmoke;
 }
-html body div.container header section.call-to-action left div.button a {
+html body div.container header section.call-to-action div.button a {
   text-align: center;
   font-size: 1.3rem;
   display: flex;
@@ -371,7 +372,7 @@ html body div.container header section.call-to-action left div.button a {
   color: whitesmoke;
   text-decoration: none;
 }
-html body div.container header section.call-to-action left div.button:hover {
+html body div.container header section.call-to-action div.button:hover {
   background: #44b1b0;
 }
 html body div.container header section.call-to-action img {
@@ -411,7 +412,7 @@ html body div.container section.features li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
-html body div.container section.lorem-paragraph {
+html body div.container section.one {
   width: 90%;
   height: 50%;
   margin: 7% auto;
@@ -419,21 +420,21 @@ html body div.container section.lorem-paragraph {
   flex-direction: column;
   color: #407791;
 }
-html body div.container section.lorem-paragraph h2 {
+html body div.container section.one h2 {
   margin-bottom: 5%;
   font-weight: bold;
   text-align: center;
 }
-html body div.container section.lorem-paragraph h3 {
+html body div.container section.one h3 {
   text-align: center;
   line-height: 2rem;
   margin-bottom: 4%;
 }
-html body div.container section.lorem-paragraph ul {
+html body div.container section.one ul {
   max-width: 90%;
   margin: 0  auto;
 }
-html body div.container section.lorem-paragraph li {
+html body div.container section.one li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
