@@ -27,80 +27,71 @@ html {
           flex-direction: column;
           .center();
           width: 100%;
-          margin-bottom: 3%;
-          margin-top: 5rem;
+          margin-bottom: 5%;
+          margin-top: 12rem;
           color: @white-text;
 
-          div.left{
-
-          flex-direction: column;
-          .center();
-
-            h1 {
+          h1 {
             
-              width: 90%;
-              font-weight: bold;
-              line-height: 1.4em;
-              margin-bottom: 2rem;
-            }
-            p {
-              font-size: 1rem;
-              line-height: 1.5em;
-              width: 80%;
-              max-width: 30rem;
-            }
-  
-            div.button {
-              background: @blue;
-              width: 60%;
-              max-width: 10rem;
-              display: flex;
-              align-items: center;
-              margin: 5%;
-              border: 4px solid @white;
-              color: @white-text;
-  
-              a {
-                text-align: center;
-                font-size: 1.3rem;
-                align-self: center;
-                justify-self: center;
-                margin: auto;
-                font-weight: bold;
-                padding: 8%;
-                color: @white-text;
-                text-decoration: none;
-              }
-            }
-  
-            div.button:hover {
-              background: darken(@green, 10%);
-            }
-  
+            width: 90%;
+            font-weight: bold;
+            line-height: 1.4em;
+            margin-bottom: 2rem;
           }
-         
-          div.right{
-            img{
-              display: none;
-              margin-bottom: 5%;
-  
-              @media @tablet{
-                display: flex;
-                border: 4.5px solid lighten(@blue, 20%);
-                border-radius: 8px;
-              }
+          p {
+            font-size: 1rem;
+            line-height: 1.5em;
+            width: 80%;
+            max-width: 30rem;
+          }
+
+          div.button {
+            background: @blue;
+            width: 60%;
+            max-width: 10rem;
+            display: flex;
+            align-items: center;
+            margin: 5%;
+            border: 4px solid @white;
+            color: @white-text;
+
+            a {
+              text-align: center;
+              font-size: 1.3rem;
+              align-self: center;
+              justify-self: center;
+              margin: auto;
+              font-weight: bold;
+              padding: 8%;
+              color: @white-text;
+              text-decoration: none;
+            }
+          }
+
+          div.button:hover {
+            background: darken(@green, 10%);
+          }
+
+          img{
+            display: none;
+            margin-bottom: 5%;
+
+            @media @tablet{
+              display: flex;
+              border: 4.5px solid lighten(@blue, 20%);
+              border-radius: 8px;
             }
           }
         } // end call to action */
       } // end header
 
       section.features {
-        .section(auto, 50%);
+        .section(90%, 50%);
               
 
       } // end features
 
-      section.lorem-paragraph {
+      section.one{
         .section(90%, 50%);
       }
       
