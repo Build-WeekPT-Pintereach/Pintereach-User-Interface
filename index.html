@@ -24,6 +24,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="/css/index.css">
+    <script src="js/script.js" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>PinteReach</title>
   </head>
@@ -54,28 +55,41 @@
       </nav>
         
       <section class="call-to-action">
-        <h1>Keep your favorite articles in one place!</h1>
-        <p>PinterReach can convert your articles to various formats (epub, mobi, pdf) to match your device needs.</p>
-          
-        <div class="button">
-        <a href="#">Sign up</a>   
+        <div class="left">
+            <h1>Keep your favorite articles in one place!</h1>
+            <p>PinterReach can convert your articles to various formats (epub, mobi, pdf) to match your device needs.</p>
+              
+            <div class="button">
+            <a href="#">Sign up</a>   
+            </div>
+        </div>
+        <div class="right">
+            <img src="img/react-app-screenshot-1.png" alt="app screenshot">
+
         </div>
 
-        <img src="img/react-app-screenshot-1.png" alt="app screenshot">
       </section>
     </header> 
 
+    <div class="left"></div>
+    <div class="right"> 
+
+     
     
+    </div>
     <section class="features">
-      <h2>Features</h2>
-      <h3>The best way to save your articles for later.</h3>
-      <ul>
-        <li><p class= "icon icon-solid icon-award">See other people's ideas and article boards</p></li>
-        <li><p class= "icon icon-solid icon-award">User can assign articles to a category</p> </li>
-        <li><p class= "icon icon-solid icon-award">User can view saved articles in cards</p></li>
-        <li><p class= "icon icon-solid icon-award">Article ranking </p></li>
-      </ul>
-    </section>
+
+        <h2>Features</h2>
+        <h3>The best way to save your articles for later.</h3>
+        <ul>
+          <li><p class= "icon icon-solid icon-award">See other people's ideas and article boards</p></li>
+          <li><p class= "icon icon-solid icon-award">User can assign articles to a category</p> </li>
+          <li><p class= "icon icon-solid icon-award">User can view saved articles in cards</p></li>
+          <li><p class= "icon icon-solid icon-award">Article ranking </p></li>
+        </ul>
+
+      </section>
+   
 
     <section class="lorem-paragraph">
       <h2>Lorem</h2>
@@ -92,25 +106,6 @@
 
     <footer><p>Copyright 2019</p></footer>
 
-    <script>
-    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-      function myFunction() {
-        const myLinks = document.getElementById("myLinks");
-        const brandText = document.querySelector("h1.logo-text");
 
-        if (myLinks.style.display === "block") {
-          myLinks.style.display = "none";
-          brandText.style.top = "25%";
-
-        } else {
-          myLinks.style.display = "block";
-          brandText.style.top = "8%";
-        }
-
-
-
-      } //end function
-      
-    </script>
   </body>
 </html>

@@ -339,19 +339,26 @@ html body div.container header section.call-to-action {
   margin-top: 5rem;
   color: whitesmoke;
 }
-html body div.container header section.call-to-action h1 {
+html body div.container header section.call-to-action div.left {
+  flex-direction: column;
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+}
+html body div.container header section.call-to-action div.left h1 {
   width: 90%;
   font-weight: bold;
   line-height: 1.4em;
   margin-bottom: 2rem;
 }
-html body div.container header section.call-to-action p {
+html body div.container header section.call-to-action div.left p {
   font-size: 1rem;
   line-height: 1.5em;
   width: 80%;
   max-width: 30rem;
 }
-html body div.container header section.call-to-action div.button {
+html body div.container header section.call-to-action div.left div.button {
   background: #5193b3;
   width: 60%;
   max-width: 10rem;
@@ -361,7 +368,7 @@ html body div.container header section.call-to-action div.button {
   border: 4px solid whitesmoke;
   color: whitesmoke;
 }
-html body div.container header section.call-to-action div.button a {
+html body div.container header section.call-to-action div.left div.button a {
   text-align: center;
   font-size: 1.3rem;
   align-self: center;
@@ -372,15 +379,15 @@ html body div.container header section.call-to-action div.button a {
   color: whitesmoke;
   text-decoration: none;
 }
-html body div.container header section.call-to-action div.button:hover {
+html body div.container header section.call-to-action div.left div.button:hover {
   background: #44b1b0;
 }
-html body div.container header section.call-to-action img {
+html body div.container header section.call-to-action div.right img {
   display: none;
   margin-bottom: 5%;
 }
 @media (min-width: 757px) {
-  html body div.container header section.call-to-action img {
+  html body div.container header section.call-to-action div.right img {
     display: flex;
     border: 4.5px solid #98bfd2;
     border-radius: 8px;
