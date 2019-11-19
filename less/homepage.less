@@ -50,16 +50,17 @@ html {
             width: 60%;
             max-width: 10rem;
             display: flex;
-            align-items: center;
-            margin: 5%;
+            flex-direction: column
+            .center();
+            margin: 5% auto;
             border: 4px solid @white;
             color: @white-text;
 
             a {
               text-align: center;
               font-size: 1.3rem;
-              align-self: center;
-              justify-self: center;
+              display: flex;
+              
               margin: auto;
               font-weight: bold;
               padding: 8%;
@@ -91,7 +92,7 @@ html {
 
       } // end features
 
-      section.section{
+      section.one{
         .section(90%, 50%);
       }
       
