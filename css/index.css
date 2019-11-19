@@ -412,7 +412,7 @@ html body div.container section.features li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
-html body div.container section.one {
+html body div.container section.lorem-paragraph {
   width: 90%;
   height: 50%;
   margin: 7% auto;
@@ -420,21 +420,21 @@ html body div.container section.one {
   flex-direction: column;
   color: #407791;
 }
-html body div.container section.one h2 {
+html body div.container section.lorem-paragraph h2 {
   margin-bottom: 5%;
   font-weight: bold;
   text-align: center;
 }
-html body div.container section.one h3 {
+html body div.container section.lorem-paragraph h3 {
   text-align: center;
   line-height: 2rem;
   margin-bottom: 4%;
 }
-html body div.container section.one ul {
+html body div.container section.lorem-paragraph ul {
   max-width: 90%;
   margin: 0  auto;
 }
-html body div.container section.one li {
+html body div.container section.lorem-paragraph li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
