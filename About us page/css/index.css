@@ -1,0 +1,248 @@
+html body p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  font-size: 1.2rem;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  /*colors*/
+}
+header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+h1 {
+  font-size: 3rem;
+  color: black;
+}
+nav {
+  background-color: #5193b3;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  height: 40px;
+}
+nav a {
+  display: flex;
+  padding: 2em;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 501px) {
+  nav {
+    flex-direction: column;
+    height: 200px;
+  }
+}
+@media (max-width: 501px) {
+  nav a {
+    padding: 0.5em;
+    padding-left: 0%;
+    font-size: 3em;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+}
+.everythig {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+.Luis {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.Lpx {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.Lpic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.lpp {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Charlie {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.Cpx {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.Cpic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.cpp {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Ray {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.Rpx {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.Rapic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.rpp {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Rose {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.ropx {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.Ropic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.ropp {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Sara {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.Spx {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.Spc {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.spp {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Brian {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.Bpx {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.Bpic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.bpp {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.footcont {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  font-size: 1rem;
+  text-decoration: none;
+  padding-top: 20px;
+}
+.ASDFASF {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  font-size: 1rem;
+  text-decoration: none;
+  padding: left 50%;
+}
