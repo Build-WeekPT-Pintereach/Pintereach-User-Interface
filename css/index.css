@@ -451,6 +451,11 @@ html body div.container section.lorem-paragraph li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
+@media (min-width: 757px) {
+  html body div.container section.lorem-paragraph {
+    justify-content: center;
+  }
+}
 @media (min-width: 980px) {
   html body div.container section.lorem-paragraph {
     display: flex;
@@ -465,12 +470,14 @@ html body div.container section.lorem-paragraph img {
 @media (min-width: 757px) {
   html body div.container section.lorem-paragraph img {
     display: flex;
+    flex-direction: column;
     place-self: center;
     align-items: center;
     place-content: center;
     text-align: center;
     width: 70%;
     margin-top: 3%;
+    padding: 1rem;
   }
 }
 @media (min-width: 980px) {
@@ -478,18 +485,26 @@ html body div.container section.lorem-paragraph img {
     display: flex;
     flex: 1;
     order: 2;
-    padding: 2rem;
+    padding: 1rem;
+    max-width: 40%;
+    margin: 0 auto;
   }
 }
 html body div.container section.lorem-paragraph .text {
   display: flex;
   flex-direction: column;
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
   flex: 1;
   order: 1;
   padding: 1rem;
+  width: 80%;
 }
 @media (min-width: 980px) {
   html body div.container section.lorem-paragraph .text {
     padding: 2rem;
+    margin: 0 auto;
   }
 }
