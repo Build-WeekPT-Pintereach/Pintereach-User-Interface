@@ -1,0 +1,164 @@
+// Styles
+
+html {
+  body {
+    font-size: 62.5%;
+
+    div.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: @main-bg;
+      width: 100%;
+      min-width: 0px;
+
+      header {
+        background: @header-bg;
+        width: 100%;
+        margin: 0 auto;
+
+        section.call-to-action {
+          display: flex;
+          flex-direction: column;
+          .center();
+          margin: 0;
+          color: @white-text;
+
+          @media @desktop {
+            flex-direction: row;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 8rem;
+
+            .left {
+              min-width: 15rem;
+              max-width: 40%;
+              margin-right: 10%;
+            }
+          
+          }
+
+          h1 {
+            width: 90%;
+            font-weight: bold;
+            line-height: 1.4em;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 1.5em;
+            width: 80%;
+            max-width: 30rem;
+            margin: 0 auto;
+          }
+
+          div.button {
+            background: @blue;
+            display: flex;
+            flex-direction: column;
+             .center();
+            margin: 0 auto;
+            border: 4px solid @white;
+            color: @white-text;
+
+          
+            a {
+              text-align: center;
+              font-size: 1.3rem;
+              display: flex;
+
+              margin: auto;
+              font-weight: bold;
+              padding: 8%;
+              color: @white-text;
+              text-decoration: none;
+            }
+          }
+
+          div.button:hover {
+            background: darken(@green, 10%);
+          }
+
+          img {
+            display: none;
+            margin-bottom: 5%;
+
+            @media @tablet {
+              display: flex;
+              border: 4.5px solid lighten(@blue, 20%);
+              border-radius: 8px;
+            }
+          }
+        } // end call to action */
+      } // end header
+
+      section.features {
+        .section(90%, 50%);
+        display: flex;
+        flex-direction: column;
+
+        ul{
+          margin: 0;
+          width: 100%;
+
+        }
+      } // end features
+
+      section.lorem-paragraph {
+        .section(90%, 50%);
+
+
+        @media @tablet {
+          justify-content: center;
+        }
+
+        @media @desktop {
+          display: flex;
+          flex-direction: row;
+        }
+
+        img {
+          display: none;
+
+          border: 3px solid @blue;
+          border-radius: 8px;
+
+          @media @tablet {
+            display: flex;
+            flex-direction: column;
+            .center();
+            width: 70%;
+            margin-top: 3%;
+            padding: 1rem;
+          }
+
+          @media @desktop {
+            display: flex;
+            flex: 1;
+            order: 2;
+            padding: 1rem;
+            max-width: 40%;
+            margin: 0 auto;
+          }
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          .center();
+          flex: 1;
+          order: 1;
+          padding: 1rem;
+          width: 80%;
+
+          @media @desktop {
+            padding: 2rem;
+            margin: 0 auto;
+          }
+        }
+      }
+    } // end container
+  }
+}
