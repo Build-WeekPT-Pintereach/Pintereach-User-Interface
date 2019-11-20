@@ -1,25 +1,38 @@
+
+html{
+  @blue: #5193b3;
+@green: #64c4c3;
+@orange: #f8d49a;
+@yellow: #f7e6ca;
+
+@white: whitesmoke;
+}
+
 html body p {
   font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-  font-size: 1.2rem;
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+ @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+ font-size: 1.2rem;
 }
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-}
+
+
 html,
 body {
   height: 100%;
   font-size: 62.5%;
-  /*colors*/
+/*colors*/
+
+
 }
+
+
+
+
 header {
+ 
   display: flex;
   justify-content: center;
   font-family: 'Montserrat';
@@ -27,11 +40,17 @@ header {
   font-weight: 400;
   font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+// @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 }
-h1 {
-  font-size: 3rem;
-  color: black;
-}
+
+  h1 {
+    font-size: 3rem;
+ color: black
+  }
+
+
+
 nav {
   background-color: #5193b3;
   display: flex;
@@ -39,86 +58,122 @@ nav {
   justify-content: center;
   justify-items: center;
   height: 40px;
+  
 }
-nav a {
-  display: flex;
-  padding: 2em;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+ nav a {
+    display: flex;
+    padding: 2em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
   font-size: 1.2rem;
-  text-decoration: none;
-  color: white;
-}
-@media (max-width: 501px) {
-  nav {
-    flex-direction: column;
-    height: 200px;
+    text-decoration: none;
+    color: white;
+  
+
   }
+
+@media (max-width: 501px) {nav {
+flex-direction: column;
+height: 200px;
+
+}}
+@media (max-width: 501px) {nav a {
+  padding: .5em;
+  padding-left:0%;
+  font-size: 3em;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+  
+  }}
+
+
+.About {
 }
-@media (max-width: 501px) {
-  nav a {
-    padding: 0.5em;
-    padding-left: 0%;
-    font-size: 3em;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-  }
+.Features {
 }
+.Login {
+}
+.Signup {
+}
+
 .everythig {
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  padding-right: 20%;
-  padding-left: 20%;
-  padding-top: 5%;
+padding-right: 20%;
+padding-left: 20%;
+padding-top: 5%;
+
+
+
+
 }
+
 .Luis {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+	display: flex;
+	align-content: center;
+	flex-direction: row;
   padding-top: 3%;
   padding-bottom: 3%;
-  border: 10px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 2em ;
+  border:10px; border-style:solid; border-color:white;
+  border-radius:2em ;
   padding-left: 5%;
-  background: #f7e6ca;
+ background: #f7e6ca;
+
+}
+.lname{
+  font-size: 2em;
+  font-weight: 200;
 }
 .Lpx {
-  display: flex;
-  align-content: center;
-  justify-items: center;
+	display: flex;
+	align-content: center;
+	justify-items: center;
   flex-direction: column;
+ 
+
+
 }
 .Lpic {
-  height: 150px;
+	height: 150px;
   width: 150px;
   border-radius: 50%;
+
+}
+.lp {
 }
 .lpp {
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+
 }
+
 .Charlie {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+	display: flex;
+	align-content: center;
+	flex-direction: row;
   padding-top: 3%;
   padding-bottom: 3%;
-  border: 10px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 2em ;
+  border:10px; border-style:solid; border-color:white;
+  border-radius:2em ;
   padding-left: 5%;
-  background: #f7e6ca;
+ background: #f7e6ca;
+
 }
+.cname{
+  font-size: 2em;
+  font-weight: 200;
+}
+
+
 .Cpx {
   display: flex;
   align-content: center;
@@ -130,24 +185,33 @@ nav a {
   width: 150px;
   border-radius: 50%;
 }
+.cp {
+}
 .cpp {
   padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
+
 .Ray {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+	display: flex;
+	align-content: center;
+	flex-direction: row;
   padding-top: 3%;
   padding-bottom: 3%;
-  border: 10px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 2em ;
+  border:10px; border-style:solid; border-color:white;
+  border-radius:2em ;
   padding-left: 5%;
-  background: #f7e6ca;
+ background: #f7e6ca;
+ 
 }
+
+.raname{
+  font-size: 2em;
+  font-weight: 200;
+}
+
+
 .Rpx {
   display: flex;
   align-content: center;
@@ -159,24 +223,34 @@ nav a {
   width: 150px;
   border-radius: 50%;
 }
+.rp {
+}
 .rpp {
   padding-top: 5%;
   padding-left: 5%;
-  padding-right: 5%;
+	padding-right: 5%;
 }
+
 .Rose {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+	display: flex;
+	align-content: center;
+	flex-direction: row;
   padding-top: 3%;
   padding-bottom: 3%;
-  border: 10px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 2em ;
+  border:10px; border-style:solid; border-color:white;
+  border-radius:2em ;
   padding-left: 5%;
-  background: #f7e6ca;
+ background: #f7e6ca;
+  
 }
+
+.rname{
+  font-size: 2em;
+  font-weight: 200;
+
+}
+
+
 .ropx {
   display: flex;
   align-content: center;
@@ -188,53 +262,74 @@ nav a {
   width: 150px;
   border-radius: 50%;
 }
+.rop {
+}
 .ropp {
   padding-top: 5%;
   padding-left: 5%;
-  padding-right: 5%;
+	padding-right: 5%;
 }
+
 .Sara {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+	display: flex;
+	align-content: center;
+	flex-direction: row;
   padding-top: 3%;
   padding-bottom: 3%;
-  border: 10px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 2em ;
+  border:10px; border-style:solid; border-color:white;
+  border-radius:2em ;
   padding-left: 5%;
-  background: #f7e6ca;
+ background: #f7e6ca;
 }
+.saname{
+  font-size: 2em;
+  font-weight: 200;
+}
+
+
+
 .Spx {
   display: flex;
   align-content: center;
   justify-items: center;
   flex-direction: column;
+  
 }
 .Spc {
   height: 150px;
   width: 150px;
   border-radius: 50%;
 }
+.sp {
+}
 .spp {
   padding-top: 5%;
   padding-left: 5%;
-  padding-right: 5%;
+	padding-right: 5%;
 }
+
 .Brian {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+// .face();
+display: flex;
+	align-content: center;
+	flex-direction: row;
   padding-top: 3%;
   padding-bottom: 3%;
-  border: 10px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 2em ;
+  border:10px; border-style:solid; border-color:white;
+  border-radius:2em ;
   padding-left: 5%;
-  background: #f7e6ca;
+ background: #f7e6ca;
+
 }
+
+.bname{
+
+  font-size: 2em;
+   font-weight: 200;
+   
+  
+}
+
 .Bpx {
   display: flex;
   align-content: center;
@@ -246,10 +341,18 @@ nav a {
   width: 150px;
   border-radius: 50%;
 }
+.bp {
+}
 .bpp {
   padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.Cx {
+
+
+ 
 }
 .footcont {
   display: flex;
@@ -263,11 +366,13 @@ nav a {
   font-weight: 400;
   font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-  font-size: 1rem;
+font-size: 1rem;
   text-decoration: none;
-  padding-top: 20px;
+ 
+  padding-top:20px;
 }
-.ASDFASF {
+
+.ASDFASF{
   display: flex;
   align-content: center;
   justify-content: center;
@@ -279,7 +384,10 @@ nav a {
   font-weight: 400;
   font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-  font-size: 1rem;
+font-size: 1rem;
   text-decoration: none;
+ 
   padding: left 50%;
+padding-bottom: 5%;
+
 }
