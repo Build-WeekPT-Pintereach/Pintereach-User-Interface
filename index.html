@@ -1,147 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>PinteReach</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-  <body>
-  
+  <link rel="stylesheet" href="/css/bulma.css">
+  <link rel="stylesheet" href="/css/index.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PinteReach</title>
+</head>
+
+<body>
+
   <div class="container">
-    <header> 
-      <!-- Top Navigation Menu -->
-      <nav class="top-nav">
-      <div class="nav-container">   
-        <img src="img/logo.png" class="logo" alt="logo" >
-          
-        <h1 class="logo-text">PinteReach</h1>
-        <!-- Hamburger Navigation links (hidden by default) -->
-        <div id="myLinks">
-          
-          <a class="about-us" href="#about">About Us</a>
-          <a class="login" href="#login">Log In</a>
-
+    <header>
+      <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="img/logo.png" width="50" height="58">
+          </a>
+          <h1>PinteReach</h1>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-
-      </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu is-active">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              About Us
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a href="https://eloquent-mcnulty-a0dd5b.netlify.com/register" class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a href="https://eloquent-mcnulty-a0dd5b.netlify.com/login" class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
-        
       <section class="call-to-action">
         <div class="left">
           <h1>Keep your favorite articles in one place!</h1>
           <p>PinterReach can convert your articles to various formats (epub, mobi, pdf) to match your device needs.</p>
-            
+
           <div class="button">
-            <a href="#">Sign up</a>   
+            <a href="#">Sign up</a>
           </div>
-       </div>
+        </div>
 
-       <div class="right">
-           <img src="img/react-app-screenshot-1.png" alt="app screenshot">
+        <div class="right">
+          <img src="img/react-app-screenshot-1.png" alt="app screenshot">
 
-       </div>
+        </div>
       </section>
 
 
-    </header> 
+    </header>
 
-    
-    <section class="features">
+
+    <!-- <section class="features">
 
       <h2>Features</h2>
       <h3>The best way to save your articles for later.</h3>
       <ul>
-        <li><p class= "icon icon-solid icon-award">See other people's ideas and article boards</p></li>
-        <li><p class= "icon icon-solid icon-award">User can assign articles to a category</p> </li>
-        <li><p class= "icon icon-solid icon-award">User can view saved articles in cards</p></li>
-        <li><p class= "icon icon-solid icon-award">Article ranking </p></li>
+        <li>
+          <p class="icon icon-solid icon-award">See other people's ideas and article boards</p>
+        </li>
+        <li>
+          <p class="icon icon-solid icon-award">User can assign articles to a category</p>
+        </li>
+        <li>
+          <p class="icon icon-solid icon-award">User can view saved articles in cards</p>
+        </li>
+        <li>
+          <p class="icon icon-solid icon-award">Article ranking </p>
+        </li>
       </ul>
+    </section> -->
+
+    <section class="lorem-paragraph">
+      <div class="text">
+        <h2>Lorem</h2>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam optio reiciendis similique, quas nemo ullam
+          esse obcaecati delectus sunt adipisci? Minus excepturi asperiores, ea voluptatem velit mollitia consequuntur
+          dicta placeat.
+          Distinctio reiciendis ea maiores, delectus consequuntur possimus voluptates ex facilis eum! Incidunt ad
+          accusantium quasi praesentium aperiam enim nobis, molestias amet quos magnam quia. Dolore aliquid eveniet quae
+          quibusdam maiores!
+          Id in natus assumenda possimus maxime dolor vero cumque. Eveniet nemo consequuntur labore obcaecati doloribus
+          harum in reiciendis sed exercitationem ipsum hic consequatur, ab, dignissimos natus? Obcaecati quia laboriosam
+          debitis.</p>
+      </div>
+      <img src="https://picsum.photos/300/200" alt="">
+
     </section>
 
     <section class="lorem-paragraph">
-        <div class="text">
-          <h2>Lorem</h2>
-          
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam optio reiciendis similique, quas nemo ullam esse obcaecati delectus sunt adipisci? Minus excepturi asperiores, ea voluptatem velit mollitia consequuntur dicta placeat.
-          Distinctio reiciendis ea maiores, delectus consequuntur possimus voluptates ex facilis eum! Incidunt ad accusantium quasi praesentium aperiam enim nobis, molestias amet quos magnam quia. Dolore aliquid eveniet quae quibusdam maiores!
-          Id in natus assumenda possimus maxime dolor vero cumque. Eveniet nemo consequuntur labore obcaecati doloribus harum in reiciendis sed exercitationem ipsum hic consequatur, ab, dignissimos natus? Obcaecati quia laboriosam debitis.</p>     
-          </div>
-        <img src="https://picsum.photos/300/200" alt="">
-        
-      </section>
+      <div class="text">
+        <h2>Lorem</h2>
 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam optio reiciendis similique, quas nemo ullam
+          esse obcaecati delectus sunt adipisci? Minus excepturi asperiores, ea voluptatem velit mollitia consequuntur
+          dicta placeat.
+          Distinctio reiciendis ea maiores, delectus consequuntur possimus voluptates ex facilis eum! Incidunt ad
+          accusantium quasi praesentium aperiam enim nobis, molestias amet quos magnam quia. Dolore aliquid eveniet quae
+          quibusdam maiores!
+          Id in natus assumenda possimus maxime dolor vero cumque. Eveniet nemo consequuntur labore obcaecati doloribus
+          harum in reiciendis sed exercitationem ipsum hic consequatur, ab, dignissimos natus? Obcaecati quia laboriosam
+          debitis.</p>
+      </div>
+      <img src="https://picsum.photos/300/200" alt="">
+
+    </section>
     <section class="lorem-paragraph">
-        <div class="text">
-          <h2>Lorem</h2>
-          
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam optio reiciendis similique, quas nemo ullam esse obcaecati delectus sunt adipisci? Minus excepturi asperiores, ea voluptatem velit mollitia consequuntur dicta placeat.
-          Distinctio reiciendis ea maiores, delectus consequuntur possimus voluptates ex facilis eum! Incidunt ad accusantium quasi praesentium aperiam enim nobis, molestias amet quos magnam quia. Dolore aliquid eveniet quae quibusdam maiores!
-          Id in natus assumenda possimus maxime dolor vero cumque. Eveniet nemo consequuntur labore obcaecati doloribus harum in reiciendis sed exercitationem ipsum hic consequatur, ab, dignissimos natus? Obcaecati quia laboriosam debitis.</p>     
-          </div>
-        <img src="https://picsum.photos/300/200" alt="">
-        
-      </section>
-      <section class="lorem-paragraph">
-          <div class="text">
-            <h2>Lorem</h2>
-            
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam optio reiciendis similique, quas nemo ullam esse obcaecati delectus sunt adipisci? Minus excepturi asperiores, ea voluptatem velit mollitia consequuntur dicta placeat.
-            Distinctio reiciendis ea maiores, delectus consequuntur possimus voluptates ex facilis eum! Incidunt ad accusantium quasi praesentium aperiam enim nobis, molestias amet quos magnam quia. Dolore aliquid eveniet quae quibusdam maiores!
-            Id in natus assumenda possimus maxime dolor vero cumque. Eveniet nemo consequuntur labore obcaecati doloribus harum in reiciendis sed exercitationem ipsum hic consequatur, ab, dignissimos natus? Obcaecati quia laboriosam debitis.</p>     
-            </div>
-          <img src="https://picsum.photos/300/200" alt="">
-          
-        </section>
-    
+      <div class="text">
+        <h2>Lorem</h2>
 
-    <footer><p>Copyright 2019</p></footer>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam optio reiciendis similique, quas nemo ullam
+          esse obcaecati delectus sunt adipisci? Minus excepturi asperiores, ea voluptatem velit mollitia consequuntur
+          dicta placeat.
+          Distinctio reiciendis ea maiores, delectus consequuntur possimus voluptates ex facilis eum! Incidunt ad
+          accusantium quasi praesentium aperiam enim nobis, molestias amet quos magnam quia. Dolore aliquid eveniet quae
+          quibusdam maiores!
+          Id in natus assumenda possimus maxime dolor vero cumque. Eveniet nemo consequuntur labore obcaecati doloribus
+          harum in reiciendis sed exercitationem ipsum hic consequatur, ab, dignissimos natus? Obcaecati quia laboriosam
+          debitis.</p>
+      </div>
+      <img src="https://picsum.photos/300/200" alt="">
+
+    </section>
+
+
+    <footer>
+      <p>Copyright 2019</p>
+    </footer>
 
     <script>
-    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-      function myFunction() {
-        const myLinks = document.getElementById("myLinks");
-        const brandText = document.querySelector("h1.logo-text");
-
-        if (myLinks.style.display === "block") {
-          myLinks.style.display = "none";
-          brandText.style.top = "25%";
-
-        } else {
-          myLinks.style.display = "block";
-          brandText.style.top = "8%";
-        }
-
-
-
-      } //end function
-      
+       
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
     </script>
-  </body>
+    </script>
+</body>
+
 </html>

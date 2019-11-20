@@ -16,13 +16,13 @@ html {
       header {
         background: @header-bg;
         width: 100%;
+        margin: 0 auto;
 
         section.call-to-action {
           display: flex;
           flex-direction: column;
           .center();
-          width: 100%;
-          margin: 5rem 5% auto auto;
+          margin: 0;
           color: @white-text;
 
           @media @desktop {
@@ -36,8 +36,7 @@ html {
               max-width: 40%;
               margin-right: 10%;
             }
-            .right {
-            }
+          
           }
 
           h1 {
@@ -57,14 +56,14 @@ html {
 
           div.button {
             background: @blue;
-            width: 60%;
-            max-width: 10rem;
             display: flex;
-            flex-direction: column .center();
-            margin: 5% auto;
+            flex-direction: column;
+             .center();
+            margin: 0 auto;
             border: 4px solid @white;
             color: @white-text;
 
+          
             a {
               text-align: center;
               font-size: 1.3rem;
@@ -97,6 +96,14 @@ html {
 
       section.features {
         .section(90%, 50%);
+        display: flex;
+        flex-direction: column;
+
+        ul{
+          margin: 0;
+          width: 100%;
+
+        }
       } // end features
 
       section.lorem-paragraph {
