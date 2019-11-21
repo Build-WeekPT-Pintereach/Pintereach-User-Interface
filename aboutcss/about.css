@@ -115,6 +115,11 @@ nav a {
   font-size: 2em;
   font-weight: 200;
 }
+.githubJ {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 .Luis {
   display: flex;
   align-content: center;
@@ -152,6 +157,11 @@ nav a {
   .Luis {
     flex-direction: column;
   }
+}
+.githubL {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 .Charlie {
   display: flex;
@@ -191,6 +201,11 @@ nav a {
   padding-left: 5%;
   padding-right: 5%;
 }
+.githubC {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 .Ray {
   display: flex;
   align-content: center;
@@ -228,6 +243,11 @@ nav a {
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+}
+.githubR {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 .Rose {
   display: flex;
@@ -267,6 +287,11 @@ nav a {
   padding-left: 5%;
   padding-right: 5%;
 }
+.githubRo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 .Sara {
   display: flex;
   align-content: center;
@@ -305,6 +330,11 @@ nav a {
   padding-left: 5%;
   padding-right: 5%;
 }
+.githubS {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 .Brian {
   display: flex;
   align-content: center;
@@ -342,6 +372,11 @@ nav a {
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+}
+.githubB {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 .footcont {
   display: flex;
