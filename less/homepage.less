@@ -17,6 +17,7 @@ html {
         background: @header-bg;
         width: 100%;
         margin: 0 auto;
+        .center();
 
         section.call-to-action {
           display: flex;
@@ -45,6 +46,9 @@ html {
             line-height: 1.4em;
             margin: 0 auto;
             margin-bottom: 2rem;
+          }
+          h3{
+            margin-bottom: 5%;
           }
           p {
             font-size: 1rem;
@@ -97,17 +101,17 @@ html {
 
       section.features {
         .section(90%, 50%);
+        .center();
         display: flex;
         flex-direction: column;
         margin: 0;
-        margin-top: 5%;
+        margin-top: 10%;
         width: 100%;
 
         ul{
          
 
           li{
-            list-style-type: circle;
 
             p{
 
@@ -119,6 +123,8 @@ html {
 
       section.lorem-paragraph {
         .section(90%, 50%);
+        margin: 0 auto;
+
 
 
         @media @tablet {
@@ -141,7 +147,8 @@ html {
             flex-direction: column;
             .center();
             width: 70%;
-            margin-top: 3%;
+            flex: 1;
+            margin: 3% auto;
             padding: 1rem;
           }
 
