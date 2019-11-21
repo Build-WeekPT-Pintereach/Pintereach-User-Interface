@@ -311,6 +311,7 @@ html body div.container header section.call-to-action {
     width: 90%;
     margin: 0 auto;
     margin-top: 8rem;
+    margin-bottom: 5%;
   }
   html body div.container header section.call-to-action div.left {
     min-width: 15rem;
@@ -376,12 +377,13 @@ html body div.container header section.call-to-action img {
 }
 html body div.container section.features {
   width: 90%;
-  height: 50%;
+  height: 60%;
   margin: 7% auto;
   color: #407791;
   display: flex;
   flex-direction: column;
-  margin: 5% auto;
+  margin: auto;
+  margin-top: 5%;
   width: 100%;
 }
 html body div.container section.features h2 {
@@ -412,7 +414,7 @@ html body div.container section.lorem-paragraph {
   display: flex;
   flex-direction: column;
   color: #407791;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 html body div.container section.lorem-paragraph h2 {
   margin-bottom: 5%;
@@ -458,6 +460,7 @@ html body div.container section.lorem-paragraph img {
     text-align: center;
     width: 70%;
     flex: 1;
+    order: 2;
     margin: 3% auto;
     padding: 1rem;
   }
@@ -466,12 +469,13 @@ html body div.container section.lorem-paragraph img {
   html body div.container section.lorem-paragraph img {
     display: flex;
     flex: 1;
+    order: 1;
     padding: 1rem;
     max-width: 40%;
     margin: 0 auto;
   }
 }
-html body div.container section.lorem-paragraph .text {
+html body div.container section.lorem-paragraph .text-left {
   display: flex;
   flex-direction: column;
   place-self: center;
@@ -482,9 +486,29 @@ html body div.container section.lorem-paragraph .text {
   order: 1;
   padding: 1rem;
   text-align: justify;
+  margin-bottom: 5%;
 }
 @media (min-width: 980px) {
-  html body div.container section.lorem-paragraph .text {
+  html body div.container section.lorem-paragraph .text-left {
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+html body div.container section.lorem-paragraph .text-right {
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+  flex: 1;
+  order: 2;
+  padding: 1rem;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph .text-right {
     padding: 2rem;
     margin: 0 auto;
   }

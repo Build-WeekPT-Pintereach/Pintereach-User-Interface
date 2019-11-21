@@ -17,6 +17,7 @@ html {
         background: @header-bg;
         width: 100%;
         margin: 0 auto;
+        
         .center();
 
         section.call-to-action {
@@ -35,6 +36,8 @@ html {
             width: 90%;
             margin: 0 auto;
             margin-top: 8rem;
+            margin-bottom: 5%;
+
 
             div.left {
               min-width: 15rem;
@@ -106,10 +109,11 @@ html {
       } // end header
 
       section.features {
-        .section(90%, 50%);
+        .section(90%, 60%);
         display: flex;
         flex-direction: column;
-        margin: 5% auto;
+        margin: auto;
+        margin-top: 5%;
         width: 100%;
 
         ul{
@@ -127,7 +131,7 @@ html {
 
       section.lorem-paragraph {
         .section(90%, 50%);
-        margin: 0 auto;
+        margin: 5% auto;
 
 
 
@@ -152,6 +156,7 @@ html {
             .center();
             width: 70%;
             flex: 1;
+            order: 2;
             margin: 3% auto;
             padding: 1rem;
           }
@@ -159,13 +164,15 @@ html {
           @media @desktop {
             display: flex;
             flex: 1;
+            order: 1;
             padding: 1rem;
             max-width: 40%;
             margin: 0 auto;
           }
+         
         }
 
-        .text {
+        .text-left {
           display: flex;
           flex-direction: column;
           .center();
@@ -173,11 +180,29 @@ html {
           order: 1;
           padding: 1rem;
           text-align: justify;
+          margin-bottom: 5%;
 
           @media @desktop {
             padding: 2rem;
             margin: 0 auto;
           }
+          
+        }
+        .text-right {
+          display: flex;
+          flex-direction: column;
+          .center();
+          flex: 1;
+          order: 2;
+          padding: 1rem;
+          text-align: justify;
+          margin-bottom: 5%;
+
+          @media @desktop {
+            padding: 2rem;
+            margin: 0 auto;
+          }
+          
         }
       }
     } // end container
