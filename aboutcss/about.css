@@ -77,6 +77,44 @@ nav a {
   padding-left: 20%;
   padding-top: 5%;
 }
+.Justin {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border: 10px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2em ;
+  padding-left: 5%;
+  background: #f7e6ca;
+}
+.Jpx {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.Jpic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.jpp {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media (max-width: 500px) {
+  .Justin {
+    flex-direction: column;
+  }
+}
+.jname {
+  font-size: 2em;
+  font-weight: 200;
+}
 .Luis {
   display: flex;
   align-content: center;
