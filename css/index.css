@@ -372,10 +372,6 @@ html body div.container section.features {
   height: 50%;
   margin: 7% auto;
   color: #407791;
-  place-self: center;
-  align-items: center;
-  place-content: center;
-  text-align: center;
   display: flex;
   flex-direction: column;
   margin: 0;
