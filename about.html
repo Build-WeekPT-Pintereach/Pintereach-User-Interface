@@ -27,8 +27,8 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="./css/bulma.css">
-  <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/index.css">
 
 
 
@@ -41,12 +41,11 @@
 
 <body>
   <header>
-    <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="http://127.0.0.1:5500/">
-          <img src="./img/logo.png" width="50" height="58">
+        <a class="navbar-item" href="">
+          <img src="./img/logo.png" width="" height="">
         </a>
-        <h1>PinteReach</h1>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
           data-target="navbarBasicExample">
@@ -56,30 +55,28 @@
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu ">
+      <div id="navbarBasicExample" class="navbar-menu is-mobile">
         <div class="navbar-start">
+
+
+
+
         </div>
 
         <div class="navbar-end">
-          <a class="navbar-item">
-            <a href="index.html">
-              <p>Home</p>
-            </a>
-          </a>
-
-          <a class="navbar-item">
-            <a href="about.html">
-              <p>About Us</p>
-            </a>
-          </a>
-
           <div class="navbar-item">
+            <a class="navbar-item">
+              Home
+            </a>
+            <a class="navbar-item">
+              About
+            </a>
             <div class="buttons">
-              <a href="https://eloquent-mcnulty-a0dd5b.netlify.com" class="button is-primary">
-                <p>Sign up</p>
+              <a class="button is-primary">
+                <strong>Sign up</strong>
               </a>
-              <a href="https://eloquent-mcnulty-a0dd5b.netlify.com" class="button is-light">
-                <p>Log in</p>
+              <a class="button is-light">
+                Log in
               </a>
             </div>
           </div>
@@ -93,7 +90,7 @@
 
 
 
-  <div class="everythig">
+  <p class="everythig">
 
 
     <div class="Justin">
@@ -201,7 +198,7 @@
 
 
     <section class="Sara">
-      <div class="Spx"><img class="Spc" src="./img/Sara.jpg" alt="" /></div>
+      <img class="Spc" src="./img/Sara.jpg" alt="" />
       <div class="sp">
         <p class="spp"><span class="saname">Sara Pettigrew</span><br />
           Welcome to Pintereach! I am a Full
@@ -239,29 +236,33 @@
     </section>
 
 
-    <footer class="Cx">
-      <div class="footcont">
-        <div class="contactH">Contact</div>
 
-      </div>
 
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+      <p>Copyright 2019</p>
     </footer>
 
-
-  </div>
-
-
-  <p class="ASDFASF">
-    pintereach@pintereach.com
-    234-234-2343</p>
-
-
-
-
-
-
-
-
+    <script>
+      (function () {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#' + burger.dataset.target);
+        burger.addEventListener('click', function () {
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
 
 
 

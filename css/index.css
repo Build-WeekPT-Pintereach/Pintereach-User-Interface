@@ -277,6 +277,10 @@ footer p {
   text-align: center;
   margin: auto;
 }
+.Jpic {
+  margin-top: 14rem;
+  max-width: 20rem;
+}
 html body {
   font-size: 62.5%;
 }

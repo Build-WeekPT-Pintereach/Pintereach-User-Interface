@@ -1,4 +1,6 @@
+/* color assignments */
 /*variables.less*/
+/* screen widths */
 .center {
   place-self: center;
   align-items: center;
@@ -137,6 +139,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  outline: none;
+}
 /*General styles*/
 h1,
 h2,
@@ -159,6 +164,7 @@ p {
 }
 a {
   font-size: 2em;
+  color: whitesmoke;
 }
 /*fonts*/
 @font-face {
@@ -201,80 +207,97 @@ a {
 .icon::before {
   margin-right: 0.5rem;
 }
-/* Style the navigation menu */
-div.topnav {
-  overflow: hidden;
+a.is-link {
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+}
+.navbar-brand {
   background-color: #5193b3;
-  position: relative;
-  /* Style Logo */
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  /* Style navigation menu links */
-  /* Style the hamburger menu */
-  /* Add a grey background color on mouse-over */
 }
-div.topnav img.logo {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
+h1 {
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
 }
-div.topnav p {
-  display: inline-block;
-  position: absolute;
-  color: whitesmoke;
-  font-size: 2rem;
-  top: 25%;
+img {
+  background: whitesmoke;
+  border-radius: 50%;
+  z-index: 3;
 }
-div.topnav #myLinks {
-  display: none;
-}
-div.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-div.topnav a.icon {
+.navbar-menu {
   background-color: #5193b3;
-  color: whitesmoke;
-  border: 3px solid whitesmoke;
-  border-radius: 12px;
-  padding: -0.2% 2.5% -0.2% 2.5%;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  bottom: 0;
 }
-div.topnav i.fa.fa-bars {
-  font-size: 30px;
+a.navbar-item {
+  color: whitesmoke;
+  background-color: #5193b3;
+}
+a.navbar-item:hover {
+  color: #f1ab3b;
+  background-color: #5193b3;
+}
+a.button.is-primary {
+  background-color: #64c4c3;
+  color: #5193b3;
+}
+a.button.is-primary:hover {
+  background-color: #89d2d1;
+  color: #5193b3;
+}
+a.button.is-light {
+  background-color: #f8d49a;
+  color: #5193b3;
+}
+a.button.is-light:hover {
+  background-color: #fbe8ca;
+  color: #5193b3;
+}
+a.button {
+  background-color: #5193b3;
+}
+a.button:hover {
+  background-color: #64c4c3;
 }
 footer {
   background: #5193b3;
   color: whitesmoke;
   width: 100%;
-  height: 4rem;
+  position: relative;
+  bottom: 0;
+  height: 3rem;
+  display: flex;
 }
 footer p {
   font-size: 1rem;
+  place-self: center;
+  align-items: center;
+  place-content: center;
   text-align: center;
-  margin: 5% auto;
+  margin: auto;
 }
 html body {
   font-size: 62.5%;
-  margin: 0;
 }
 html body div.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  background: whitesmoke;
+  margin: 0;
+  flex: 1;
+  min-width: 100%;
 }
 html body div.container header {
   background: #5193b3;
   width: 100%;
+  margin: 0 auto;
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
 }
 html body div.container header section.call-to-action {
   display: flex;
@@ -283,69 +306,219 @@ html body div.container header section.call-to-action {
   align-items: center;
   place-content: center;
   text-align: center;
-  width: 100%;
-  margin-bottom: 5%;
+  margin-top: 20%;
+  color: whitesmoke;
+}
+@media (min-width: 757px) {
+  html body div.container header section.call-to-action {
+    margin-top: 6rem;
+  }
+}
+@media (min-width: 980px) {
+  html body div.container header section.call-to-action {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 5%;
+  }
+  html body div.container header section.call-to-action div.left {
+    min-width: 15rem;
+    max-width: 40%;
+    margin-right: 10%;
+  }
 }
 html body div.container header section.call-to-action h1 {
-  color: whitesmoke;
-  margin: 10% 5% auto;
   width: 90%;
   font-weight: bold;
   line-height: 1.4em;
-  padding-bottom: 10%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+html body div.container header section.call-to-action h3 {
+  margin-bottom: 5%;
 }
 html body div.container header section.call-to-action p {
-  color: whitesmoke;
   font-size: 1rem;
   line-height: 1.5em;
   width: 80%;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 html body div.container header section.call-to-action div.button {
   background: #5193b3;
-  width: 60%;
-  max-width: 234px;
-  height: 50%;
   display: flex;
+  flex-direction: column;
+  place-self: center;
   align-items: center;
-  margin: 10%;
+  place-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
   border: 4px solid whitesmoke;
+  color: whitesmoke;
+  width: 14rem;
+  height: 4rem;
 }
 html body div.container header section.call-to-action div.button a {
   text-align: center;
-  color: whitesmoke;
   font-size: 1.3rem;
-  align-self: center;
-  justify-self: center;
+  display: flex;
   margin: auto;
   font-weight: bold;
   padding: 8%;
+  color: whitesmoke;
   text-decoration: none;
 }
 html body div.container header section.call-to-action div.button:hover {
   background: #44b1b0;
 }
+html body div.container header section.call-to-action img {
+  display: none;
+  margin-bottom: 5%;
+}
+@media (min-width: 757px) {
+  html body div.container header section.call-to-action img {
+    display: flex;
+    border: 4.5px solid #98bfd2;
+    border-radius: 8px;
+  }
+}
 html body div.container section.features {
   width: 90%;
-  height: 50%;
-  margin: 10% 10% auto;
+  height: 60%;
+  margin: 7% auto;
+  color: #407791;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  margin-top: 5%;
+  width: 100%;
 }
 html body div.container section.features h2 {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   font-weight: bold;
   text-align: center;
 }
 html body div.container section.features h3 {
   text-align: center;
+  line-height: 2rem;
+  margin-bottom: 4%;
 }
 html body div.container section.features ul {
-  width: 90%;
+  max-width: 90%;
+  margin: 0  auto;
 }
 html body div.container section.features li {
-  line-height: 2rem;
-  margin: 5% 0;
+  line-height: 2.3rem;
+  margin-top: 3%;
 }
-html body div.container section.features p.icon-solid::before {
-  color: #64c4c3;
+html body div.container section.features ul {
+  margin-bottom: 5%;
+}
+html body div.container section.lorem-paragraph {
+  width: 90%;
+  height: 50%;
+  margin: 7% auto;
+  display: flex;
+  flex-direction: column;
+  color: #407791;
+  margin: 5% auto;
+}
+html body div.container section.lorem-paragraph h2 {
+  margin-bottom: 5%;
+  font-weight: bold;
+  text-align: center;
+}
+html body div.container section.lorem-paragraph h3 {
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 4%;
+}
+html body div.container section.lorem-paragraph ul {
+  max-width: 90%;
+  margin: 0  auto;
+}
+html body div.container section.lorem-paragraph li {
+  line-height: 2.3rem;
+  margin-top: 3%;
+}
+@media (min-width: 757px) {
+  html body div.container section.lorem-paragraph {
+    justify-content: center;
+  }
+}
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph {
+    display: flex;
+    flex-direction: row;
+  }
+}
+html body div.container section.lorem-paragraph img {
+  display: none;
+  border: 3px solid #5193b3;
+  border-radius: 8px;
+}
+@media (min-width: 757px) {
+  html body div.container section.lorem-paragraph img {
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    align-items: center;
+    place-content: center;
+    text-align: center;
+    width: 70%;
+    flex: 1;
+    order: 2;
+    margin: 3% auto;
+    padding: 1rem;
+  }
+}
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph img {
+    display: flex;
+    flex: 1;
+    order: 1;
+    padding: 1rem;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+}
+html body div.container section.lorem-paragraph .text-left {
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+  flex: 1;
+  order: 1;
+  padding: 1rem;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph .text-left {
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+html body div.container section.lorem-paragraph .text-right {
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+  flex: 1;
+  order: 2;
+  padding: 1rem;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+@media (min-width: 980px) {
+  html body div.container section.lorem-paragraph .text-right {
+    padding: 2rem;
+    margin: 0 auto;
+  }
 }
