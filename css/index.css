@@ -260,6 +260,10 @@ a.button {
 a.button:hover {
   background-color: #64c4c3;
 }
+a.navbar-item img {
+  min-width: 3rem;
+  min-height: 3rem;
+}
 footer {
   background: #5193b3;
   color: whitesmoke;
@@ -276,10 +280,6 @@ footer p {
   place-content: center;
   text-align: center;
   margin: auto;
-}
-.Jpic {
-  margin-top: 14rem;
-  max-width: 20rem;
 }
 html body {
   font-size: 62.5%;

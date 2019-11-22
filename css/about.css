@@ -96,10 +96,7 @@ html body p {
     justify-items: center;
     flex-direction: column;
   }
-  .Jpic {
-    
-    border-radius: 50%;
-  }
+
   .jpp {
     padding-top: 5%;
     padding-left: 5%;
@@ -142,10 +139,7 @@ html body p {
     justify-items: center;
     flex-direction: column;
   }
-  .Lpic {
-    
-    border-radius: 50%;
-  }
+
   .lpp {
     padding-top: 5%;
     padding-left: 5%;
