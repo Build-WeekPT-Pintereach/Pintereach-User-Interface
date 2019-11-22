@@ -331,6 +331,9 @@ html body div.container header section.call-to-action {
     max-width: 40%;
     margin-right: 10%;
   }
+  html body div.container header section.call-to-action div.right {
+    width: 20%;
+  }
 }
 html body div.container header section.call-to-action h1 {
   width: 90%;
