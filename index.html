@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/bulma.css">
+  <link rel="stylesheet" href="/css/index.css">
+
+  
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PinteReach</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+            <img src="./img/logo.png" width="" height="">
+          </a>
+
+          <h1 class="navbar-item">PinteReach</h1>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu is-mobile">
+          <div class="navbar-start">
+           
+      
+      
+            
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+                <a class="navbar-item" href="./index.html">
+                    Home
+                  </a>
+                  <a class="navbar-item" href="./about.html">
+                      About
+                    </a>
+              <div class="buttons">
+                <a class="button is-primary" href="https://eloquent-mcnulty-a0dd5b.netlify.com/">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light" href="https://eloquent-mcnulty-a0dd5b.netlify.com/">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="call-to-action">
+        <div class="left">
+          <h1>We keep your favorite articles organized</h1>
+
+          <h3>Scattered articles? No more!</h3>
+
+          <div class="button">
+            <a href="https://eloquent-mcnulty-a0dd5b.netlify.com">Sign up</a>
+          </div>
+        </div>
+
+        <div class="right">
+          <img src="img/pintereach-app.png" alt="app screenshot">
+
+        </div>
+      </section>
+
+
+    </header>
+
+
+    <section class="features">
+
+      <h2>Features</h2>
+      <h3>The best way to save your articles for later.</h3>
+      <ul>
+        <li>
+          <p class="icon-solid icon-award"> Add articles</p>
+        </li>
+        <li>
+          <p class="icon-solid icon-award"> User can assign articles to a category</p>
+        </li>
+        <li>
+          <p class="icon-solid icon-award"> User can view saved articles in cards</p>
+        </li>
+        <li>
+          <p class="icon-solid icon-award"> Article ranking</p>
+        </li>
+      </ul>
+    </section> 
+
+    <section class="lorem-paragraph">
+      <div class="text-left">
+        <h2>Add articles</h2>
+
+      <p>Easily add your favorite articles by completing a form!</p>
+      </div>
+      <img src="./img/add-article.png" alt="">
+
+    </section>
+
+    <section class="lorem-paragraph">
+      <div class="text-right">
+        <h2>User can assign articles to a category</h2>
+
+        <p>It is as easy as typing a category for your article!</p>
+      </div>
+      <img src="./img/category.png" alt="">
+
+    </section>
+    <section class="lorem-paragraph">
+      <div class="text-left">
+        <h2>User can view saved articles in cards</h2>
+
+        <p>Cover, category, and summary are shown in a clean card view</div>
+      <img src="./img/cards.png" alt="">
+
+    </section>
+
+
+    <footer>
+      <p>Copyright 2019</p>
+    </footer>
+
+    <script>
+       
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+    
+</body>
+
+</html>
