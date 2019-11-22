@@ -230,6 +230,9 @@ img {
 .navbar-menu {
   background-color: #5193b3;
 }
+h1.navbar-item {
+  color: whitesmoke;
+}
 a.navbar-item {
   color: whitesmoke;
   background-color: #5193b3;
@@ -280,6 +283,11 @@ footer p {
   place-content: center;
   text-align: center;
   margin: auto;
+}
+@media (min-width: 500px) {
+  .div.Justin {
+    margin-top: 0;
+  }
 }
 html body {
   font-size: 62.5%;

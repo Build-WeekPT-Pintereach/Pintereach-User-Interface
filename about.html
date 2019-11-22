@@ -44,7 +44,7 @@
       <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <a class="navbar-item" href="">
-              <img src="./img/logo.png" width="" height="">
+              <img src="./img/logo.png">
             </a>
         
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -82,7 +82,7 @@
             </div>
           </div>
         </nav>
-    <h1>About Pintereach</h1>
+ <!-- <h1>About Pintereach</h1> -->
   </header>
 
 
@@ -253,10 +253,11 @@
     </footer>
 
     <script>
-      (function () {
+       
+      (function() {
         var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#' + burger.dataset.target);
-        burger.addEventListener('click', function () {
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
           burger.classList.toggle('is-active');
           nav.classList.toggle('is-active');
         });
