@@ -232,6 +232,11 @@ img {
 }
 a.navbar-item {
   color: whitesmoke;
+  background-color: #5193b3;
+}
+a.navbar-item:hover {
+  color: #f1ab3b;
+  background-color: #5193b3;
 }
 a.button.is-primary {
   background-color: #64c4c3;
