@@ -233,18 +233,22 @@ header {
 .navbar-menu {
   background-color: #5193b3;
 }
-a.navbar-item,
-a.navbar-link {
+a {
   color: whitesmoke;
 }
 div.button {
   width: 9rem;
 }
-a.button.is-primary {
+div.button a {
+  color: whitesmoke;
+}
+a.button.is-primary:hover {
   background-color: #64c4c3;
+  color: whitesmoke;
 }
 a.button.is-light {
   background-color: #f8d49a;
+  color: whitesmoke;
 }
 a.button {
   background-color: #5193b3;
