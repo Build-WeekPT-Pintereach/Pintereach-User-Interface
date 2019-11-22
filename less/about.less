@@ -18,8 +18,8 @@ img.github-logo {
 
 img.Jpic {
 
-    width: 10rem;
-    height: 8rem;
+    width: 24rem;
+    height: 12rem;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
@@ -30,8 +30,9 @@ img.Jpic {
 
     @media @desktop {
 
-        width: 50rem;
-        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+       
 
     }
 
@@ -43,26 +44,27 @@ img.Jpic {
 }
 
 img.Spc {
-    width: 15rem;
-    height: 9rem;
+   
+    width:20rem;
+    height: 4rem;
     margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-
     @media @tablet{
-        margin-right: 15rem;
+        margin-right: 1rem;
     }
-
     @media @desktop {
 
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+        width: 20%;
+        height: 12%;
+       
 
     }
-
 }
 
-p.spp{
 
-}
+
 img.Cpic {
     width: 10rem;
     height: 8rem;
@@ -124,20 +126,19 @@ img.Rapic {
 }
 
 img.Ropic {
+    display: flex;
     width: 10rem;
     height: 8rem;
     margin: 0 auto;
     margin-left: auto;
-    margin-right: auto;
-
+    @media @tablet{
+        margin-right: 5rem;
+    }
     @media @desktop {
 
-        width: 50rem;
-        height: 8rem;
-
-    }
-    @media @tablet{
         margin-right: 15rem;
+       
+
     }
 }
 
@@ -172,7 +173,10 @@ img.Bpic {
     }
 }
 
-
+.div.justin{
+    width: 0;
+    height: 0;
+}
 .navbar-item {
     .center();
 }
@@ -201,4 +205,12 @@ footer{
     p{
         color: @white;
     }
+}
+
+@media (min-width: 489px) && (max-width: 753px){
+    img{
+        margin-right: 14rem;
+    }
+}
+
 }
