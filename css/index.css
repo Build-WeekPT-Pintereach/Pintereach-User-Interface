@@ -164,6 +164,7 @@ p {
 }
 a {
   font-size: 2em;
+  color: whitesmoke;
 }
 /*fonts*/
 @font-face {
@@ -206,26 +207,22 @@ a {
 .icon::before {
   margin-right: 0.5rem;
 }
-div.container {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
-header {
-  display: flex;
-  max-width: 100%;
-}
-.navbar-brand {
-  background-color: #5193b3;
-}
-.navbar-brand h1 {
+a.is-link {
   place-self: center;
   align-items: center;
   place-content: center;
   text-align: center;
 }
-.navbar-brand img {
+.navbar-brand {
+  background-color: #5193b3;
+}
+h1 {
+  place-self: center;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+}
+img {
   background: whitesmoke;
   border-radius: 50%;
   z-index: 3;
@@ -233,22 +230,24 @@ header {
 .navbar-menu {
   background-color: #5193b3;
 }
-a {
+a.navbar-item {
   color: whitesmoke;
 }
-div.button {
-  width: 9rem;
-}
-div.button a {
-  color: whitesmoke;
+a.button.is-primary {
+  background-color: #64c4c3;
+  color: #5193b3;
 }
 a.button.is-primary:hover {
-  background-color: #64c4c3;
-  color: whitesmoke;
+  background-color: #89d2d1;
+  color: #5193b3;
 }
 a.button.is-light {
   background-color: #f8d49a;
-  color: whitesmoke;
+  color: #5193b3;
+}
+a.button.is-light:hover {
+  background-color: #fbe8ca;
+  color: #5193b3;
 }
 a.button {
   background-color: #5193b3;
@@ -282,8 +281,9 @@ html body div.container {
   justify-content: center;
   align-items: center;
   background: whitesmoke;
-  width: 100%;
-  min-width: 0px;
+  margin: 0;
+  flex: 1;
+  min-width: 100%;
 }
 html body div.container header {
   background: #5193b3;

@@ -3,6 +3,7 @@
 html {
   body {
     font-size: 62.5%;
+    
 
     div.container {
       display: flex;
@@ -10,8 +11,9 @@ html {
       justify-content: center;
       align-items: center;
       background: @main-bg;
-      width: 100%;
-      min-width: 0px;
+      margin: 0;
+      flex: 1;
+      min-width: 100%;
 
       header {
         background: @header-bg;
@@ -24,6 +26,7 @@ html {
           display: flex;
           flex-direction: column;
           .center();
+         
           margin-top: 20%;
           color: @white-text;
 
@@ -37,6 +40,7 @@ html {
             margin: 0 auto;
             margin-top: 8rem;
             margin-bottom: 5%;
+           
 
 
             div.left {

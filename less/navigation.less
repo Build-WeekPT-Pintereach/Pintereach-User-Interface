@@ -1,9 +1,12 @@
+
+
+a.is-link{
+  .center();
+}
+
 .navbar-brand {
   background-color: @blue;
 }
-
-
-
 
 
 h1 {
@@ -18,12 +21,15 @@ img {
 }
 
 
-
-
 .navbar-menu {
   background-color: @blue;
 
 
+}
+
+a.navbar-item{
+  color: @white;
+  
 }
 
 
@@ -39,16 +45,21 @@ a.button.is-primary {
 }
 
 a.button.is-primary:hover {
-  background-color: @green;
-  color: @red;
+  background-color: lighten(@green, 10%);
+  color: @blue-txt;
 
 }
 
 a.button.is-light {
   background-color: @orange;
   color: @blue-txt;
-
 }
+
+a.button.is-light:hover {
+  background-color: lighten(@orange, 10%);
+  color: @blue-txt;
+}
+
 
 a.button {
   background-color: @blue;
@@ -59,12 +70,3 @@ a.button:hover {
 
 }
 
-div.navbar-end a.home{
-  margin: auto;
-  color: red;
-}
-
-a.about{
- margin: auto;
- color: red;
-}
