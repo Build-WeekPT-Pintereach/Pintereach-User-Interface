@@ -143,6 +143,9 @@ a {
   outline: none;
 }
 /*General styles*/
+html {
+  background-color: whitesmoke;
+}
 h1,
 h2,
 h3,
@@ -342,10 +345,11 @@ footer {
   background: #5193b3;
   color: whitesmoke;
   width: 100%;
-  position: relative;
-  bottom: 0;
   height: 3rem;
+  position: absolute;
+  bottom: -700px;
   display: flex;
+  z-index: 500;
 }
 footer p {
   font-size: 1rem;
@@ -693,6 +697,9 @@ html body div.container section.features li {
 }
 html body div.container section.features ul {
   margin-bottom: 5%;
+}
+html body div.container div.inner-container {
+  background: whitesmoke;
 }
 html body div.container div.inner-container section.lorem-paragraph {
   justify-content: center;
