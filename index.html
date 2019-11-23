@@ -26,47 +26,50 @@
   <link rel="stylesheet" href="/css/bulma.css">
   <link rel="stylesheet" href="/css/index.css">
 
-  
-  
+
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>PinteReach</title>
 </head>
 
-<body>
+<body class="site">
 
   <div class="container">
     <header>
       <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="">
-            <img src="./img/logo.png" width="" height="">
-          </a>
+          <img src="./img/logo.png">
+          <h1 class="">PinteReach</h1>
 
-          <h1 class="navbar-item">PinteReach</h1>
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu is-mobile">
+
+
+
+        <div id="navbarBasicExample" class="navbar-menu is-mobile is-normal">
+
           <div class="navbar-start">
-           
-      
-      
-            
+
+
+
           </div>
-      
+
           <div class="navbar-end">
             <div class="navbar-item">
-                <a class="navbar-item" href="./index.html">
-                    Home
-                  </a>
-                  <a class="navbar-item" href="./about.html">
-                      About
-                    </a>
+              <a class="navbar-item" href="./index.html">
+                Home
+              </a>
+              <a class="navbar-item" href="./about.html">
+                About
+              </a>
               <div class="buttons">
                 <a class="button is-primary" href="https://eloquent-mcnulty-a0dd5b.netlify.com/">
                   <strong>Sign up</strong>
@@ -76,9 +79,11 @@
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </nav>
+
       <section class="call-to-action">
         <div class="left">
           <h1>We keep your favorite articles organized</h1>
@@ -118,35 +123,41 @@
           <p class="icon-solid icon-award"> Article ranking</p>
         </li>
       </ul>
-    </section> 
-
-    <section class="lorem-paragraph">
-      <div class="text-left">
-        <h2>Add articles</h2>
-
-      <p>Easily add your favorite articles by completing a form!</p>
-      </div>
-      <img src="./img/add-article.png" alt="">
-
     </section>
 
-    <section class="lorem-paragraph">
-      <div class="text-right">
-        <h2>User can assign articles to a category</h2>
+    <div class="inner-container">
+      <section class="lorem-paragraph">
+        <div class="text-left">
+          <h2>Add articles</h2>
 
-        <p>It is as easy as typing a category for your article!</p>
-      </div>
-      <img src="./img/category.png" alt="">
+          <p>Easily add your favorite articles by completing a form!</p>
+        </div>
+        <img src="./img/add-article.png" alt="">
 
-    </section>
-    <section class="lorem-paragraph">
-      <div class="text-left">
-        <h2>User can view saved articles in cards</h2>
+      </section>
 
-        <p>Cover, category, and summary are shown in a clean card view</div>
-      <img src="./img/cards.png" alt="">
+      <section class="lorem-paragraph">
+        <div class="text-right">
+          <h2>User can assign articles to a category</h2>
 
-    </section>
+          <p>It is as easy as typing a category for your article!</p>
+        </div>
+        <img src="./img/category.png" alt="">
+
+      </section>
+      <section class="lorem-paragraph">
+        <div class="text-left">
+          <h2>User can view saved articles in cards</h2>
+
+          <p>Cover, category, and summary are shown in a clean card view
+
+        </div>
+        <img src="./img/cards.png" alt="">
+
+      </section>
+
+
+    </div>
 
 
     <footer>
@@ -154,17 +165,16 @@
     </footer>
 
     <script>
-       
-      (function() {
+      (function () {
         var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#'+burger.dataset.target);
-        burger.addEventListener('click', function(){
+        var nav = document.querySelector('#' + burger.dataset.target);
+        burger.addEventListener('click', function () {
           burger.classList.toggle('is-active');
           nav.classList.toggle('is-active');
         });
       })();
     </script>
-    
+
 </body>
 
 </html>
