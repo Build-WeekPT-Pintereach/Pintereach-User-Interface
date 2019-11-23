@@ -3,7 +3,7 @@
 html {
   body {
     font-size: 62.5%;
-    
+
 
     div.container {
       display: flex;
@@ -19,40 +19,44 @@ html {
         background: @header-bg;
         width: 100%;
         margin: 0 auto;
-        
+
         .center();
 
         section.call-to-action {
           display: flex;
           flex-direction: column;
           .center();
-         
-          margin-top: 10%;
+
+          margin-top: 20%;
           color: @white-text;
 
-          @media @tablet{
-            margin-top: 6rem;
+          @media @tablet {
+            margin-top: 8rem;
           }
 
           @media @desktop {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-direction: row;
             width: 90%;
             margin: 0 auto;
             margin-bottom: 5%;
-           
+            <h1 class="">PinteReach</h1>
+
 
 
             div.left {
-              min-width: 15rem;
-              max-width: 40%;
               margin-right: 10%;
+              flex: 2;
             }
-            div.right{
+
+            div.right {
+              display: flex;
               width: 20%;
+              flex: 1;
+              align-self: end;
             }
-          
+
           }
 
           h1 {
@@ -61,10 +65,13 @@ html {
             line-height: 1.4em;
             margin: 0 auto;
             margin-bottom: 2rem;
+           
           }
-          h3{
+
+          h3 {
             margin-bottom: 5%;
           }
+
           p {
             font-size: 1rem;
             line-height: 1.5em;
@@ -77,7 +84,7 @@ html {
             background: @blue;
             display: flex;
             flex-direction: column;
-             .center();
+            .center();
             margin: 0 auto;
             margin-bottom: 5%;
             border: 4px solid @white;
@@ -85,7 +92,7 @@ html {
             width: 14rem;
             height: 4rem;
 
-          
+
             a {
               text-align: center;
               font-size: 1.3rem;
@@ -111,10 +118,22 @@ html {
               display: flex;
               border: 4.5px solid lighten(@blue, 20%);
               border-radius: 8px;
+              height: 25rem;
+              margin-bottom: 2rem;
+            }
+
+            @media @desktop {
+              margin-top: 6rem;
+              height: 25rem;
+
             }
           }
-        } // end call to action */
-      } // end header
+        }
+
+        // end call to action */
+      }
+
+      // end header
 
       section.features {
         .section(90%, 60%);
@@ -124,95 +143,128 @@ html {
         margin-top: 5%;
         width: 100%;
 
-        ul{
-         
+        ul {
 
-          li{
 
-            p{
+          li {
 
-            }
+            p {}
           }
-        margin-bottom: 5%;
+
+          margin-bottom: 5%;
         }
-      } // end features
+      }
 
-      section.lorem-paragraph {
-        .section(90%, 50%);
-        margin: 0 auto;
-
+      // end features
+      div.inner-container {
 
 
-        @media @tablet {
-          justify-content: center;
-        }
-
-        @media @desktop {
+        section.lorem-paragraph {
           display: flex;
-          flex-direction: row;
-        }
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          align-self: center;
 
-        img {
-          display: none;
+          .section(90%, 50%);
+          margin: 0 auto;
+          padding-top: 0;
+          margin-top: 0;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          
+          margin-top: 0;
 
-          border: 3px solid @blue;
-          border-radius: 8px;
+
 
           @media @tablet {
+            justify-content: space-evenly;
+          }
+
+          @media @desktop {
+            display: flex;
+            flex-direction: row;
+          }
+
+
+          
+          img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 3px solid @blue;
+            border-radius: 8px;
+            order: 2;
+            margin: 0 auto;
+            
+
+            @media @tablet {
+              display: flex;
+              flex-direction: column;
+              .center();
+              width: 70%;
+              margin: 0 auto;
+              padding: 1rem;
+            }
+
+            @media @desktop {
+              display: flex;
+              flex: 1;
+              order: 1;
+              padding: 1rem;
+              max-width: 40%;
+              margin: 0 auto;
+            }
+
+          }
+
+          .text-left {
             display: flex;
             flex-direction: column;
             .center();
-            width: 70%;
-            flex: 1;
+            padding: 1rem;
+            text-align: justify;
             order: 2;
-            margin: 0 auto;
-            padding: 1rem;
+
+            @media @desktop {
+              padding: 2rem;
+              margin: 0 auto;
+              order: 1;
+              flex: 1;
+
+            }
+
+            h1{
+              margin: 0 auto;
+              margin-top: 0;
+              padding-top: 0;
+            }
+
           }
 
-          @media @desktop {
+          .text-right {
             display: flex;
-            flex: 1;
-            order: 1;
+            flex-direction: column;
+            .center();
+            
             padding: 1rem;
-            max-width: 40%;
-            margin: 0 auto;
-          }
-         
-        }
+            text-align: justify;
+            order: 2;
 
-        .text-left {
-          display: flex;
-          flex-direction: column;
-          .center();
-          flex: 1;
-          order: 1;
-          padding: 1rem;
-          text-align: justify;
-          margin-bottom: 5%;
+            @media @desktop {
+              padding: 2rem;
+              margin: 0 auto;
+              flex: 1;
+              order: 2;
+            }
 
-          @media @desktop {
-            padding: 2rem;
-            margin: 0 auto;
           }
-          
-        }
-        .text-right {
-          display: flex;
-          flex-direction: column;
-          .center();
-          flex: 1;
-          order: 2;
-          padding: 1rem;
-          text-align: justify;
-          margin-bottom: 5%;
-
-          @media @desktop {
-            padding: 2rem;
-            margin: 0 auto;
-          }
-          
         }
       }
-    } // end container
+
+
+    }
+
+    // end container
   }
 }

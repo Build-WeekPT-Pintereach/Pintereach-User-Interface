@@ -41,48 +41,51 @@
 
 <body>
   <header>
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-          <img src="./img/logo.png">
-        </a>
-
-        <h1 class="navbar-item">PinteReach</h1>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    
-      <div id="navbarBasicExample" class="navbar-menu is-mobile">
-        <div class="navbar-start">
+      
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+              <img src="./img/logo.png">
+             
+  
+           
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+  
+          <h1 class="">PinteReach</h1>
+        
+          <div id="navbarBasicExample" class="navbar-menu is-mobile is-normal">
+            
+            <div class="navbar-start">
          
-    
-    
-          
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-              <a class="navbar-item" href="./index.html">
-                  Home
-                </a>
-                <a class="navbar-item" href="./about.html">
-                    About
+        
+              
+            </div>
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                  <a class="navbar-item" href="./index.html">
+                      Home
+                    </a>
+                    <a class="navbar-item" href="./about.html">
+                        About
+                      </a>
+                <div class="buttons">
+                  <a class="button is-primary" href="https://eloquent-mcnulty-a0dd5b.netlify.com/">
+                    <strong>Sign up</strong>
                   </a>
-            <div class="buttons">
-              <a class="button is-primary" href="https://eloquent-mcnulty-a0dd5b.netlify.com/">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light" href="https://eloquent-mcnulty-a0dd5b.netlify.com/">
-                Log in
-              </a>
+                  <a class="button is-light" href="https://eloquent-mcnulty-a0dd5b.netlify.com/">
+                    Log in
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </nav>
- <!-- <h1>About Pintereach</h1> -->
+        </nav>
+    <!-- <h1>About Pintereach</h1> -->
   </header>
 
 
@@ -238,7 +241,7 @@
 
 
 
-    </div>
+  </div>
 
 
 
@@ -248,21 +251,20 @@
 
 
 
-    <footer>
-      <p>Copyright 2019</p>
-    </footer>
+  <footer>
+    <p>Copyright 2019</p>
+  </footer>
 
-    <script>
-       
-      (function() {
-        var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#'+burger.dataset.target);
-        burger.addEventListener('click', function(){
-          burger.classList.toggle('is-active');
-          nav.classList.toggle('is-active');
-        });
-      })();
-    </script>
+  <script>
+    (function () {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#' + burger.dataset.target);
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+  </script>
 
 
 
