@@ -368,8 +368,8 @@ img.github-logo {
   height: 3rem;
 }
 img.Jpic {
-  width: 10rem;
-  height: 8rem;
+  width: 24rem;
+  height: 12rem;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
@@ -381,8 +381,8 @@ img.Jpic {
 }
 @media (min-width: 980px) {
   img.Jpic {
-    width: 50rem;
-    height: 8rem;
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (min-width: 757px) {
@@ -391,15 +391,22 @@ img.Jpic {
   }
 }
 img.Spc {
-  width: 15rem;
-  height: 9rem;
+  width: 20rem;
+  height: 4rem;
   margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 757px) {
   img.Spc {
-    margin-right: 15rem;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 980px) {
+  img.Spc {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    width: 20%;
+    height: 12%;
   }
 }
 img.Cpic {
@@ -456,19 +463,18 @@ img.Rapic {
   }
 }
 img.Ropic {
+  display: flex;
   width: 10rem;
   height: 8rem;
   margin: 0 auto;
   margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 980px) {
-  img.Ropic {
-    width: 50rem;
-    height: 8rem;
-  }
 }
 @media (min-width: 757px) {
+  img.Ropic {
+    margin-right: 5rem;
+  }
+}
+@media (min-width: 980px) {
   img.Ropic {
     margin-right: 15rem;
   }
@@ -502,6 +508,10 @@ img.Bpic {
     height: 8rem;
   }
 }
+.div.justin {
+  width: 0;
+  height: 0;
+}
 .navbar-item {
   place-self: center;
   align-items: center;
@@ -525,6 +535,11 @@ img.Bpic {
 }
 footer p {
   color: whitesmoke;
+}
+@media (min-width: 489px) and (max-width: 753px) {
+  img {
+    margin-right: 14rem;
+  }
 }
 html body {
   font-size: 62.5%;
@@ -555,7 +570,7 @@ html body div.container header section.call-to-action {
   align-items: center;
   place-content: center;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
   color: whitesmoke;
 }
 @media (min-width: 757px) {
@@ -565,10 +580,11 @@ html body div.container header section.call-to-action {
 }
 @media (min-width: 980px) {
   html body div.container header section.call-to-action {
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
-    margin-top: 8rem;
     margin-bottom: 5%;
   }
   html body div.container header section.call-to-action div.left {
@@ -675,7 +691,7 @@ html body div.container section.lorem-paragraph {
   display: flex;
   flex-direction: column;
   color: #407791;
-  margin: 5% auto;
+  margin: 0 auto;
 }
 html body div.container section.lorem-paragraph h2 {
   margin-bottom: 5%;
@@ -722,7 +738,7 @@ html body div.container section.lorem-paragraph img {
     width: 70%;
     flex: 1;
     order: 2;
-    margin: 3% auto;
+    margin: 0 auto;
     padding: 1rem;
   }
 }
