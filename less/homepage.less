@@ -27,7 +27,7 @@ html {
           flex-direction: column;
           .center();
          
-          margin-top: 20%;
+          margin-top: 10%;
           color: @white-text;
 
           @media @tablet{
@@ -35,10 +35,11 @@ html {
           }
 
           @media @desktop {
+            display: flex;
+            justify-content: space-evenly;
             flex-direction: row;
             width: 90%;
             margin: 0 auto;
-            margin-top: 8rem;
             margin-bottom: 5%;
            
 
@@ -138,7 +139,7 @@ html {
 
       section.lorem-paragraph {
         .section(90%, 50%);
-        margin: 5% auto;
+        margin: 0 auto;
 
 
 
@@ -164,7 +165,7 @@ html {
             width: 70%;
             flex: 1;
             order: 2;
-            margin: 3% auto;
+            margin: 0 auto;
             padding: 1rem;
           }
 
