@@ -143,6 +143,9 @@ a {
   outline: none;
 }
 /*General styles*/
+html {
+  background-color: whitesmoke;
+}
 h1,
 h2,
 h3,
@@ -287,10 +290,11 @@ img.githubJ.github-logo {
   text-align: center;
 }
 h1 {
-  place-self: center;
-  align-items: center;
-  place-content: center;
-  text-align: center;
+  color: whitesmoke;
+  margin-top: 0.5rem;
+  left: 0;
+  flex: 1;
+  margin-right: auto;
 }
 img {
   background: whitesmoke;
@@ -341,10 +345,11 @@ footer {
   background: #5193b3;
   color: whitesmoke;
   width: 100%;
-  position: relative;
-  bottom: 0;
   height: 3rem;
+  position: absolute;
+  bottom: -50px;
   display: flex;
+  z-index: 500;
 }
 footer p {
   font-size: 1rem;
@@ -368,139 +373,182 @@ img.github-logo {
   height: 3rem;
 }
 img.Jpic {
-  width: 10rem;
-  height: 8rem;
+  height: 150px;
+  width: 150px;
   margin: 0 auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
+   
 }
 @media (min-width: 757px) {
   img.Jpic {
+    height: 150px;
+    width: 150px;
     margin-right: 15rem;
   }
 }
 @media (min-width: 980px) {
   img.Jpic {
-    width: 50rem;
-    height: 8rem;
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+    /* display: flex;
+    justify-content: space-between; */
   }
 }
-@media (min-width: 757px) {
+/* @media (min-width: 500px) {
   img.Jpic {
-    width: 20rem;
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+    
+   
   }
-}
-img.Spc {
-  width: 15rem;
-  height: 9rem;
+} */
+
+img.Lpic {
+  height: 150px;
+  width: 150px;
   margin: 0 auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
 }
 @media (min-width: 757px) {
-  img.Spc {
+  img.Lpic {
+    height: 150px;
+    width: 150px;
     margin-right: 15rem;
+  }
+}
+@media (min-width: 980px) {
+  img.Lpic {
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+    /* display: flex;
+    justify-content: space-between; */
   }
 }
 img.Cpic {
-  width: 10rem;
-  height: 8rem;
+  height: 150px;
+  width: 150px;
   margin: 0 auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
 }
 @media (min-width: 757px) {
   img.Cpic {
+    height: 150px;
+    width: 150px;
     margin-right: 15rem;
   }
 }
 @media (min-width: 980px) {
   img.Cpic {
-    width: 50rem;
-    height: 8rem;
-  }
-}
-img.Lpic {
-  width: 10rem;
-  height: 8rem;
-  margin: 0 auto;
-  margin-left: auto;
-}
-@media (min-width: 757px) {
-  img.Lpic {
+    height: 150px;
+    width: 150px;
     margin-right: 15rem;
-  }
-}
-@media (min-width: 980px) {
-  img.Lpic {
-    width: 50rem;
-    height: 8rem;
+    /* display: flex;
+    justify-content: space-between; */
   }
 }
 img.Rapic {
-  width: 10rem;
-  height: 8rem;
+  height: 150px;
+  width: 150px;
   margin: 0 auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
 }
 @media (min-width: 757px) {
   img.Rapic {
+    height: 150px;
+    width: 150px;
     margin-right: 15rem;
   }
 }
 @media (min-width: 980px) {
   img.Rapic {
-    width: 50rem;
-    height: 8rem;
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+    /* display: flex;
+    justify-content: space-between; */
   }
 }
 img.Ropic {
-  width: 10rem;
-  height: 8rem;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto; 
+}
+@media (min-width: 757px) {
+  img.Ropic {
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+  }
+}
+@media (min-width: 980px) {
+  img.Ropic {
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+    /* display: flex;
+    justify-content: space-between; */
+  }
+}
+img.Spc {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto; 
+}
+@media (min-width: 757px) {
+  img.Spc {
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+  }
+}
+@media (min-width: 980px) {
+  img.Spc {
+    height: 150px;
+    width: 150px;
+    margin-right: 15rem;
+    /* display: flex;
+    justify-content: space-between; */
+  }
+}
+
+img.Bpic {
+  height: 150px;
+  width: 150px;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 980px) {
-  img.Ropic {
-    width: 50rem;
-    height: 8rem;
-  }
-}
-@media (min-width: 757px) {
-  img.Ropic {
-    margin-right: 15rem;
-  }
-}
-img.Bpic {
-  display: flex;
-  width: 10rem;
-  height: 8rem;
-  margin: 0 auto;
-  margin-left: auto;
-}
 @media (min-width: 757px) {
   img.Bpic {
+    height: 150px;
+    width: 150px;
     margin-right: 15rem;
   }
 }
 @media (min-width: 980px) {
   img.Bpic {
+    height: 150px;
+    width: 150px;
     margin-right: 15rem;
+    /* display: flex;
+    justify-content: space-between; */
   }
 }
-@media (min-width: 757px) {
-  img.Bpic {
-    margin: 0 auto;
-    margin-right: 15rem;
-  }
-}
-@media (min-width: 980px) {
-  img.Bpic {
-    width: 50rem;
-    height: 8rem;
-  }
+
+.div.justin {
+  width: 0;
+  height: 0;
 }
 .navbar-item {
   place-self: center;
@@ -510,22 +558,37 @@ img.Bpic {
 }
 .everythig {
   margin: 0 auto;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   padding: 0;
   width: 90%;
   flex: 1;
   max-width: 50rem;
+
   padding-top: 50px;
+
 }
 @media (min-width: 980px) {
   .everythig {
     width: 90%;
     margin: 0 auto;
     max-width: 50rem;
+    padding-top: 100px;
   }
 }
+@media (max-width: 500px) {
+  .everythig {
+   
+    padding-top: 100px;
+  }
+}
+
 footer p {
   color: whitesmoke;
+}
+@media (min-width: 489px) and (max-width: 753px) {
+  img {
+    margin-right: 14rem;
+  }
 }
 html body {
   font-size: 62.5%;
@@ -561,24 +624,27 @@ html body div.container header section.call-to-action {
 }
 @media (min-width: 757px) {
   html body div.container header section.call-to-action {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 }
 @media (min-width: 980px) {
   html body div.container header section.call-to-action {
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
-    margin-top: 8rem;
     margin-bottom: 5%;
   }
   html body div.container header section.call-to-action div.left {
-    min-width: 15rem;
-    max-width: 40%;
     margin-right: 10%;
+    flex: 2;
   }
   html body div.container header section.call-to-action div.right {
+    display: flex;
     width: 20%;
+    flex: 1;
+    align-self: end;
   }
 }
 html body div.container header section.call-to-action h1 {
@@ -586,7 +652,6 @@ html body div.container header section.call-to-action h1 {
   font-weight: bold;
   line-height: 1.4em;
   margin: 0 auto;
-  margin-bottom: 2rem;
 }
 html body div.container header section.call-to-action h3 {
   margin-bottom: 5%;
@@ -635,6 +700,14 @@ html body div.container header section.call-to-action img {
     display: flex;
     border: 4.5px solid #98bfd2;
     border-radius: 8px;
+    height: 25rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 980px) {
+  html body div.container header section.call-to-action img {
+    margin-top: 6rem;
+    height: 25rem;
   }
 }
 html body div.container section.features {
@@ -669,51 +742,65 @@ html body div.container section.features li {
 html body div.container section.features ul {
   margin-bottom: 5%;
 }
-html body div.container section.lorem-paragraph {
+html body div.container div.inner-container {
+  background: whitesmoke;
+}
+html body div.container div.inner-container section.lorem-paragraph {
+  justify-content: center;
+  align-items: flex-start;
+  align-self: center;
   width: 90%;
   height: 50%;
   margin: 7% auto;
   display: flex;
   flex-direction: column;
   color: #407791;
-  margin: 5% auto;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
-html body div.container section.lorem-paragraph h2 {
+html body div.container div.inner-container section.lorem-paragraph h2 {
   margin-bottom: 5%;
   font-weight: bold;
   text-align: center;
 }
-html body div.container section.lorem-paragraph h3 {
+html body div.container div.inner-container section.lorem-paragraph h3 {
   text-align: center;
   line-height: 2rem;
   margin-bottom: 4%;
 }
-html body div.container section.lorem-paragraph ul {
+html body div.container div.inner-container section.lorem-paragraph ul {
   max-width: 90%;
   margin: 0  auto;
 }
-html body div.container section.lorem-paragraph li {
+html body div.container div.inner-container section.lorem-paragraph li {
   line-height: 2.3rem;
   margin-top: 3%;
 }
 @media (min-width: 757px) {
-  html body div.container section.lorem-paragraph {
-    justify-content: center;
+  html body div.container div.inner-container section.lorem-paragraph {
+    justify-content: space-evenly;
   }
 }
 @media (min-width: 980px) {
-  html body div.container section.lorem-paragraph {
+  html body div.container div.inner-container section.lorem-paragraph {
     display: flex;
     flex-direction: row;
   }
 }
-html body div.container section.lorem-paragraph img {
-  display: none;
+html body div.container div.inner-container section.lorem-paragraph img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border: 3px solid #5193b3;
   border-radius: 8px;
+  order: 2;
+  margin: 0 auto;
 }
 @media (min-width: 757px) {
-  html body div.container section.lorem-paragraph img {
+  html body div.container div.inner-container section.lorem-paragraph img {
     display: flex;
     flex-direction: column;
     place-self: center;
@@ -721,14 +808,12 @@ html body div.container section.lorem-paragraph img {
     place-content: center;
     text-align: center;
     width: 70%;
-    flex: 1;
-    order: 2;
-    margin: 3% auto;
+    margin: 0 auto;
     padding: 1rem;
   }
 }
 @media (min-width: 980px) {
-  html body div.container section.lorem-paragraph img {
+  html body div.container div.inner-container section.lorem-paragraph img {
     display: flex;
     flex: 1;
     order: 1;
@@ -737,41 +822,46 @@ html body div.container section.lorem-paragraph img {
     margin: 0 auto;
   }
 }
-html body div.container section.lorem-paragraph .text-left {
+html body div.container div.inner-container section.lorem-paragraph .text-left {
   display: flex;
   flex-direction: column;
   place-self: center;
   align-items: center;
   place-content: center;
   text-align: center;
-  flex: 1;
-  order: 1;
   padding: 1rem;
   text-align: justify;
-  margin-bottom: 5%;
+  order: 2;
 }
 @media (min-width: 980px) {
-  html body div.container section.lorem-paragraph .text-left {
+  html body div.container div.inner-container section.lorem-paragraph .text-left {
     padding: 2rem;
     margin: 0 auto;
+    order: 1;
+    flex: 1;
   }
 }
-html body div.container section.lorem-paragraph .text-right {
+html body div.container div.inner-container section.lorem-paragraph .text-left h1 {
+  margin: 0 auto;
+  margin-top: 0;
+  padding-top: 0;
+}
+html body div.container div.inner-container section.lorem-paragraph .text-right {
   display: flex;
   flex-direction: column;
   place-self: center;
   align-items: center;
   place-content: center;
   text-align: center;
-  flex: 1;
-  order: 2;
   padding: 1rem;
   text-align: justify;
-  margin-bottom: 5%;
+  order: 2;
 }
 @media (min-width: 980px) {
-  html body div.container section.lorem-paragraph .text-right {
+  html body div.container div.inner-container section.lorem-paragraph .text-right {
     padding: 2rem;
     margin: 0 auto;
+    flex: 1;
+    order: 2;
   }
 }
