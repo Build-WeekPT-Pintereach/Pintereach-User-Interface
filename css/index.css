@@ -563,8 +563,9 @@ img.Bpic {
   width: 90%;
   flex: 1;
   max-width: 50rem;
-  padding-top: 100px;
-  
+
+  padding-top: 50px;
+
 }
 @media (min-width: 980px) {
   .everythig {
